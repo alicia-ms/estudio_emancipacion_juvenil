@@ -105,7 +105,6 @@ def scrape_ciudad(pagina, url_base, max_paginas=20):
 
     return list(resultados.values())
 
-
 def cargar_datos(urlZona, nombre):
     with sync_playwright() as p:
 
@@ -121,10 +120,10 @@ def cargar_datos(urlZona, nombre):
 
 # URLS
 urlCasasBilbao = "https://www.pisos.com/alquiler/pisos-bilbao/"
-cargar_datos(urlCasasBilbao, "CasasBilbao")
+cargar_datos(urlCasasBilbao, "CasasBilbao_PisosCom")
 
 urlCasasDonos = "https://www.pisos.com/alquiler/pisos-san_sebastian_donostia/"
-cargar_datos(urlCasasDonos, "CasasDonos")
+cargar_datos(urlCasasDonos, "CasasDonos_PisosCom")
 
 # print("\nDatos guardados en CasasBilbao.json")
 # print("Anuncios encontrados:", len(viviendasBilbao))

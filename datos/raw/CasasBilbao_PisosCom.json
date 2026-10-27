@@ -1,17 +1,17 @@
 [
     {
-        "Id": "66754691449.101800",
-        "Titulo": "Piso en Casco Viejo - Zazpi Kaleak",
-        "Barrio": "Casco Viejo - Zazpi Kaleak",
-        "Distrito": "Ibaiondo",
-        "Precio": "1.800 €/mes",
+        "Id": "616195228.287100",
+        "Titulo": "Piso en calle de Marcelino Oreja",
+        "Barrio": "Indautxu",
+        "Distrito": "",
+        "Precio": "1.400 €/mes",
         "TipoContrato": "Larga estancia",
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 67,
-        "Planta": 8,
-        "PrecioM2": 26.87,
-        "Url": "https://www.pisos.com/alquilar/piso-casco_viejo_zazpi_kaleak48005-66754691449_101800/"
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 100,
+        "Planta": 6,
+        "PrecioM2": 14.0,
+        "Url": "https://www.pisos.com/alquilar/piso-indautxu-616195228_287100/"
     },
     {
         "Id": "67516813724.108900",
@@ -40,20 +40,6 @@
         "Planta": 4,
         "PrecioM2": 21.05,
         "Url": "https://www.pisos.com/alquilar/piso-abando_hurtado_de_amezaga48003-68385750381_109300/"
-    },
-    {
-        "Id": "616195228.287100",
-        "Titulo": "Piso en calle de Marcelino Oreja",
-        "Barrio": "Indautxu",
-        "Distrito": "",
-        "Precio": "1.400 €/mes",
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 100,
-        "Planta": 6,
-        "PrecioM2": 14.0,
-        "Url": "https://www.pisos.com/alquilar/piso-indautxu-616195228_287100/"
     },
     {
         "Id": "68390743536.535579",
@@ -294,6 +280,20 @@
         "Url": "https://www.pisos.com/alquilar/piso-indautxu-67589414688_102200/"
     },
     {
+        "Id": "67569068143.102200",
+        "Titulo": "Piso en calle de Arechaga",
+        "Barrio": "Bilbo Zaharra",
+        "Distrito": "Ibaiondo",
+        "Precio": "1.400 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": 3,
+        "PrecioM2": 17.5,
+        "Url": "https://www.pisos.com/alquilar/piso-bilbo_zaharra48003-67569068143_102200/"
+    },
+    {
         "Id": "65841356163.102200",
         "Titulo": "Piso en Poza Lizentziatuaren Kalea",
         "Barrio": "Indautxu",
@@ -348,6 +348,20 @@
         "Planta": 1,
         "PrecioM2": 18.95,
         "Url": "https://www.pisos.com/alquilar/piso-basurtu_zorrotza_altamira-68391232307_102200/"
+    },
+    {
+        "Id": "67547422198.102200",
+        "Titulo": "Piso en Andra Maria Kalea",
+        "Barrio": "Casco Viejo - Zazpi Kaleak",
+        "Distrito": "Ibaiondo",
+        "Precio": "1.600 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 69,
+        "Planta": 1,
+        "PrecioM2": 23.19,
+        "Url": "https://www.pisos.com/alquilar/piso-casco_viejo_zazpi_kaleak48005-67547422198_102200/"
     },
     {
         "Id": "63347724600.102200",
@@ -406,6 +420,20 @@
         "Url": "https://www.pisos.com/alquilar/piso-indautxu-67527765601_102200/"
     },
     {
+        "Id": "67530953702.102200",
+        "Titulo": "Piso en calle de Arechaga",
+        "Barrio": "Bilbo Zaharra",
+        "Distrito": "Ibaiondo",
+        "Precio": "A consultar",
+        "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": 3,
+        "PrecioM2": null,
+        "Url": "https://www.pisos.com/alquilar/piso-bilbo_zaharra48003-67530953702_102200/"
+    },
+    {
         "Id": "67571960745.102200",
         "Titulo": "Piso en Corta  2 Fianzas No Mascotas de 02 de Noviembre Al 30 de Marzo",
         "Barrio": "Ibaizabal-Abusu",
@@ -432,6 +460,20 @@
         "Planta": 1,
         "PrecioM2": null,
         "Url": "https://www.pisos.com/alquilar/piso-basurtu_zorrotza_altamira-68354240379_102200/"
+    },
+    {
+        "Id": "68403960738.102200",
+        "Titulo": "Piso en 2 Mes de Fianza +200€ de Suministros Tenemos Llaves-Disponible 1 de Diciembre-Despensa No Se Usa y P",
+        "Barrio": "Casco Viejo - Zazpi Kaleak",
+        "Distrito": "Ibaiondo",
+        "Precio": "1.350 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": 2,
+        "PrecioM2": 16.88,
+        "Url": "https://www.pisos.com/alquilar/piso-casco_viejo_zazpi_kaleak48005-68403960738_102200/"
     },
     {
         "Id": "67563356224.106100",
@@ -546,6 +588,20 @@
         "Url": "https://www.pisos.com/alquilar/piso-abando_hurtado_de_amezaga48008-67592808940_106100/"
     },
     {
+        "Id": "66754691449.101800",
+        "Titulo": "Piso en Casco Viejo - Zazpi Kaleak",
+        "Barrio": "Casco Viejo - Zazpi Kaleak",
+        "Distrito": "Ibaiondo",
+        "Precio": "1.800 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 67,
+        "Planta": 8,
+        "PrecioM2": 26.87,
+        "Url": "https://www.pisos.com/alquilar/piso-casco_viejo_zazpi_kaleak48005-66754691449_101800/"
+    },
+    {
         "Id": "58395553587.102200",
         "Titulo": "Piso en Fianza 1-2 Meses,  Disponible Junio 2027",
         "Barrio": "Abando Ensanche",
@@ -602,6 +658,20 @@
         "Url": "https://www.pisos.com/alquilar/piso-doneperiaga_deustuibarra_san_pedro_la_ribera48014-68407514966_102200/"
     },
     {
+        "Id": "67505644043.105000",
+        "Titulo": "Piso en Abando Hurtado de Amézaga",
+        "Barrio": "Abando Hurtado de Amézaga",
+        "Distrito": "Abando",
+        "Precio": "4.500 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 4,
+        "Banos": 3,
+        "Metros": 175,
+        "Planta": 6,
+        "PrecioM2": 25.71,
+        "Url": "https://www.pisos.com/alquilar/piso-abando_hurtado_de_amezaga48008-67505644043_105000/"
+    },
+    {
         "Id": "67560317830.105000",
         "Titulo": "Ático en Bilbao",
         "Barrio": "Bilbao",
@@ -616,18 +686,18 @@
         "Url": "https://www.pisos.com/alquilar/atico-bilbao-67560317830_105000/"
     },
     {
-        "Id": "67505644043.105000",
-        "Titulo": "Piso en Abando Hurtado de Amézaga",
-        "Barrio": "Abando Hurtado de Amézaga",
-        "Distrito": "Abando",
-        "Precio": "4.500 €/mes",
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 4,
-        "Banos": 3,
-        "Metros": 175,
-        "Planta": 6,
-        "PrecioM2": 25.71,
-        "Url": "https://www.pisos.com/alquilar/piso-abando_hurtado_de_amezaga48008-67505644043_105000/"
+        "Id": "68355667195.102200",
+        "Titulo": "Piso en 2 Mes de Fianza +200€ de Suministros Tenemos Llaves-Disponible 1 de Diciembre-Despensa No Se Usa y P",
+        "Barrio": "Casco Viejo - Zazpi Kaleak",
+        "Distrito": "Ibaiondo",
+        "Precio": "A consultar",
+        "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": 2,
+        "PrecioM2": null,
+        "Url": "https://www.pisos.com/alquilar/piso-casco_viejo_zazpi_kaleak48005-68355667195_102200/"
     },
     {
         "Id": "60068913830.102200",

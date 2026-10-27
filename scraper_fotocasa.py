@@ -1,0 +1,163 @@
+import json
+import os
+import random
+import time
+
+from playwright.sync_api import sync_playwright
+
+BASE = "https://www.fotocasa.es"
+
+SUBTIPOS = {
+    "Flat": "Piso",
+    "Apartment": "Apartamento",
+    "Duplex": "Dúplex",
+    "Penthouse": "Ático",
+    "Studio": "Estudio",
+    "Loft": "Loft",
+    "House": "Casa",
+}
+
+PLANTAS_FIJAS = {
+    1: "Sótano",
+    2: "Subsótano",
+    3: "Bajos",
+    4: "Entresuelo",
+    5: "Principal",
+    31: "Otros",
+    32: "Ático",
+}
+
+
+def get_feature(features, clave):
+    for f in features or []:
+        if f.get("key") == clave:
+            return f.get("value")
+    return None
+
+
+def traducir_planta(codigo):
+    if codigo is None:
+        return None
+    if codigo in PLANTAS_FIJAS:
+        return PLANTAS_FIJAS[codigo]
+    if 6 <= codigo <= 20:
+        return f"{codigo - 5}ª Planta"
+    return str(codigo)
+
+
+def tipo_contrato(item):
+    descripcion = (item.get("description") or "").lower()
+    if (
+        item.get("isTemporaryRental")
+        or "IS_TEMPORARY" in (item.get("dynamicFeatures") or [])
+        or "contrato de temporada" in descripcion
+    ):
+        return "Temporada"
+    return "Larga estancia"
+
+
+def parsear_anuncio(item):
+    direccion = item.get("address", {})
+    features = item.get("features", [])
+
+    precio = item.get("rawPrice")
+    metros = get_feature(features, "surface")
+    precio_m2 = round(precio / metros, 2) if precio and metros else None
+
+    subtipo = SUBTIPOS.get(item.get("buildingSubtype"), item.get("buildingSubtype"))
+    ubicacion = item.get("location") or direccion.get("neighborhood")
+    detalle = (item.get("detail") or {}).get("es-ES")
+
+    return {
+        "Id": item.get("id"),
+        "Titulo": f"{subtipo} en {ubicacion}",
+        "Barrio": direccion.get("neighborhood"),
+        "Distrito": direccion.get("district"),
+        "Precio": precio if isinstance(precio, (int, float)) else None,
+        "TipoContrato": tipo_contrato(item),
+        "Habitaciones": get_feature(features, "rooms"),
+        "Banos": get_feature(features, "bathrooms"),
+        "Metros": metros,
+        "Planta": traducir_planta(get_feature(features, "floor")),
+        "PrecioM2": precio_m2,
+        "Url": BASE + detalle if detalle else None,
+    }
+
+
+def leer_estado(pagina):
+    pagina.wait_for_selector("script#__initial_props__", state="attached", timeout=30000)
+    texto = pagina.locator("script#__initial_props__").text_content()
+    return json.loads(texto)["initialSearch"]["result"]
+
+
+def scrape_ciudad(pagina, url_base):
+    viviendas = {}
+    numero = 1
+    total = None
+
+    while True:
+        url = url_base if numero == 1 else f"{url_base}/{numero}"
+        print(f"Página {numero}: {url}")
+        pagina.goto(url, wait_until="domcontentloaded", timeout=60000)
+
+        try:
+            resultado = leer_estado(pagina)
+        except Exception as e:
+            print(f"  No se pudo leer el JSON ({e}). Paro aquí.")
+            break
+
+        total = resultado.get("count", total)
+        anuncios = resultado.get("realEstates", [])
+        if not anuncios:
+            break
+
+        nuevos = 0
+        for item in anuncios:
+            if item["id"] not in viviendas:
+                viviendas[item["id"]] = parsear_anuncio(item)
+                nuevos += 1
+
+        print(f"  {nuevos} nuevos ({len(viviendas)}/{total})")
+
+        if nuevos == 0 or (total and len(viviendas) >= total):
+            break
+
+        numero += 1
+        time.sleep(random.uniform(2, 4))
+
+    return list(viviendas.values())
+
+
+def cargar_datos(url_zona, nombre):
+    with sync_playwright() as p:
+        navegador = p.chromium.launch(headless=True) 
+        contexto = navegador.new_context(
+            locale="es-ES",
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+            ),
+        )
+        pagina = contexto.new_page()
+        viviendas = scrape_ciudad(pagina, url_zona)
+        navegador.close()
+
+    os.makedirs("datos/raw", exist_ok=True)
+    with open(f"datos/raw/{nombre}.json", "w", encoding="utf-8") as f:
+        json.dump(viviendas, f, indent=4, ensure_ascii=False)
+    print(f"Guardado datos/raw/{nombre}.json ({len(viviendas)} anuncios)")
+
+
+if __name__ == "__main__":
+    cargar_datos(
+        "https://www.fotocasa.es/es/alquiler/viviendas/bilbao/todas-las-zonas/l",
+        "CasasBilbao_Fotocasa",
+    )
+    cargar_datos(
+            "https://www.fotocasa.es/es/alquiler/viviendas/donostia-san-sebastian/todas-las-zonas/l",
+            "CasasDonos_Fotocasa",
+        )
+    cargar_datos(
+            "https://www.fotocasa.es/es/alquiler/viviendas/vitoria-gasteiz/todas-las-zonas/l",
+            "CasasVitoria_Fotocasa",
+        )
