@@ -2,6 +2,9 @@ import json
 import os
 import random
 import time
+import pandas as pd
+import re
+import unicodedata
 
 from playwright.sync_api import sync_playwright
 
@@ -148,16 +151,28 @@ def cargar_datos(url_zona, nombre):
     print(f"Guardado datos/raw/{nombre}.json ({len(viviendas)} anuncios)")
 
 
-if __name__ == "__main__":
-    cargar_datos(
-        "https://www.fotocasa.es/es/alquiler/viviendas/bilbao/todas-las-zonas/l",
-        "CasasBilbao_Fotocasa",
+def extraer_municipios():
+    df = pd.read_csv(
+    "datos/raw/mediaPoblacionEmpleo.csv",
+    skiprows=2,
+    encoding="latin1"
     )
-    cargar_datos(
-            "https://www.fotocasa.es/es/alquiler/viviendas/donostia-san-sebastian/todas-las-zonas/l",
-            "CasasDonos_Fotocasa",
+    municipios = df["municipio (> 40.000 habitantes)"].unique()
+    return municipios
+
+if __name__ == "__main__":
+    municipios = extraer_municipios()
+    for municipio in municipios:
+        url_zona = f"https://www.fotocasa.es/es/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/todas-las-zonas/l"
+
+        nombre_municipio = unicodedata.normalize("NFKD", municipio)
+        nombre_municipio = "".join(
+            c for c in nombre_municipio
+            if not unicodedata.combining(c)
         )
-    cargar_datos(
-            "https://www.fotocasa.es/es/alquiler/viviendas/vitoria-gasteiz/todas-las-zonas/l",
-            "CasasVitoria_Fotocasa",
-        )
+        nombre_municipio = re.sub(r'[<>:"/\\|?*]', "_", nombre_municipio)
+        nombre_municipio = nombre_municipio.replace(" ", "")
+
+        nombre = f"Casas{nombre_municipio}_Fotocasa"
+
+        cargar_datos(url_zona, nombre)

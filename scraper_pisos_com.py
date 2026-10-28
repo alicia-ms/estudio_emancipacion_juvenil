@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import json
 import re
+import unicodedata
+import pandas as pd
 from playwright.sync_api import sync_playwright
 
 
@@ -105,6 +107,17 @@ def scrape_ciudad(pagina, url_base, max_paginas=20):
 
     return list(resultados.values())
 
+
+def extraer_municipios():
+    df = pd.read_csv(
+    "datos/raw/mediaPoblacionEmpleo.csv",
+    skiprows=2,
+    encoding="latin1"
+    )
+    municipios = df["municipio (> 40.000 habitantes)"].unique()
+    return municipios
+
+
 def cargar_datos(urlZona, nombre):
     with sync_playwright() as p:
 
@@ -119,11 +132,20 @@ def cargar_datos(urlZona, nombre):
         json.dump(viviendas, f, indent=4, ensure_ascii=False)
 
 # URLS
-urlCasasBilbao = "https://www.pisos.com/alquiler/pisos-bilbao/"
-cargar_datos(urlCasasBilbao, "CasasBilbao_PisosCom")
 
-urlCasasDonos = "https://www.pisos.com/alquiler/pisos-san_sebastian_donostia/"
-cargar_datos(urlCasasDonos, "CasasDonos_PisosCom")
+if __name__ == "__main__":
+    municipios = extraer_municipios()
+    for municipio in municipios:
+        url_zona = f"https://www.pisos.com/alquiler/{municipio.lower().replace(' ', '-')}/"
 
-# print("\nDatos guardados en CasasBilbao.json")
-# print("Anuncios encontrados:", len(viviendasBilbao))
+        nombre_municipio = unicodedata.normalize("NFKD", municipio)
+        nombre_municipio = "".join(
+            c for c in nombre_municipio
+            if not unicodedata.combining(c)
+        )
+        nombre_municipio = re.sub(r'[<>:"/\\|?*]', "_", nombre_municipio)
+        nombre_municipio = nombre_municipio.replace(" ", "")
+
+        nombre = f"Casas{nombre_municipio}_PisosCom"
+
+        cargar_datos(url_zona, nombre)

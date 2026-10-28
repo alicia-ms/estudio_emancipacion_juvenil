@@ -1,0 +1,72 @@
+[
+    {
+        "Id": 179475390,
+        "Titulo": "Piso en Calle General Castaños Kalea, 3, Centro",
+        "Barrio": null,
+        "Distrito": "Centro",
+        "Precio": 1850,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 55,
+        "Planta": null,
+        "PrecioM2": 33.64,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/ascensor-amueblado/179475390/d"
+    },
+    {
+        "Id": 190841862,
+        "Titulo": "Apartamento en Casco Viejo - Muelle",
+        "Barrio": null,
+        "Distrito": "Casco Viejo - Muelle",
+        "Precio": 80,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 50,
+        "Planta": "Bajos",
+        "PrecioM2": 1.6,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/jardin-terraza-ascensor-piscina-se-aceptan-mascotas/190841862/d"
+    },
+    {
+        "Id": 191234371,
+        "Titulo": "Piso en Araba Kalea, Centro",
+        "Barrio": null,
+        "Distrito": "Centro",
+        "Precio": 950,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 71,
+        "Planta": "1ª Planta",
+        "PrecioM2": 13.38,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/calefaccion-terraza-ascensor-amueblado-television/191234371/d"
+    },
+    {
+        "Id": 189221982,
+        "Titulo": "Piso en Azeta - Abatxolo",
+        "Barrio": null,
+        "Distrito": "Azeta - Abatxolo",
+        "Precio": 1300,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 3,
+        "Banos": 1,
+        "Metros": 110,
+        "Planta": "2ª Planta",
+        "PrecioM2": 11.82,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/calefaccion-terraza-ascensor-amueblado-television/189221982/d"
+    },
+    {
+        "Id": 188262474,
+        "Titulo": "Piso en Metaladen Taldea, 3, Buenavista",
+        "Barrio": null,
+        "Distrito": "Buenavista",
+        "Precio": 350,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 3,
+        "Banos": 1,
+        "Metros": 80,
+        "Planta": null,
+        "PrecioM2": 4.38,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/amueblado-television/188262474/d"
+    }
+]
