@@ -13,7 +13,7 @@ client.makedirs(RAW)
 client.makedirs(PROCESED)
 
 
-for ruta_local in glob.glob("datos/raw/*_*.json"):
+for ruta_local in glob.glob("datos/raw/Pisos/*_*.json"):
     nombre = os.path.basename(ruta_local)
     fuente = nombre.split("_")[0]
     destino = f"{RAW}/{fuente}/{nombre}"

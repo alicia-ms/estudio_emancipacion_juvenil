@@ -134,10 +134,10 @@ def cargar_datos(urlZona, nombre):
         print(f"{nombre}: solo {len(viviendas)} anuncios (mínimo {MIN_ANUNCIOS}). No se guarda.")
         return
 
-    os.makedirs("datos/raw", exist_ok=True)
-    with open(f"datos/raw/{nombre}.json", "w", encoding="utf-8") as f:
+    os.makedirs("datos/raw/Pisos", exist_ok=True)
+    with open(f"datos/raw/Pisos/{nombre}.json", "w", encoding="utf-8") as f:
         json.dump(viviendas, f, indent=4, ensure_ascii=False)
-    print(f"Guardado datos/raw/{nombre}.json ({len(viviendas)} anuncios)")
+    print(f"Guardado datos/raw/Pisos/{nombre}.json ({len(viviendas)} anuncios)")
     
 
 if __name__ == "__main__":
