@@ -1,0 +1,219 @@
+{
+    "dataset": {
+        "dimension": {
+            "tipo de contrato": {
+                "label": "tipo de contrato",
+                "category": {
+                    "index": {
+                        "10": 0,
+                        "20": 1,
+                        "30": 2,
+                        "40": 3
+                    },
+                    "label": {
+                        "10": "Total",
+                        "20": "Indefinido-fijo",
+                        "30": "Temporal",
+                        "40": "Sin contrato y otros"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "territorio histórico": {
+                "label": "territorio histórico",
+                "category": {
+                    "index": {
+                        "00": 0,
+                        "01": 1,
+                        "48": 2,
+                        "20": 3
+                    },
+                    "label": {
+                        "00": "C.A. de Euskadi",
+                        "01": "Araba / Álava",
+                        "48": "Bizkaia",
+                        "20": "Gipuzkoa"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "sexo": {
+                "label": "sexo",
+                "category": {
+                    "index": {
+                        "10": 0,
+                        "20": 1,
+                        "30": 2
+                    },
+                    "label": {
+                        "10": "Total",
+                        "20": "Hombres",
+                        "30": "Mujeres"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "trimestre": {
+                "label": "trimestre",
+                "category": {
+                    "index": {
+                        "10": 0
+                    },
+                    "label": {
+                        "10": "Promedio anual"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "periodo": {
+                "label": "periodo",
+                "category": {
+                    "index": {
+                        "2024": 0,
+                        "2025": 1
+                    },
+                    "label": {
+                        "2024": "2024",
+                        "2025": "2025"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "id": [
+                "tipo de contrato",
+                "territorio histórico",
+                "sexo",
+                "trimestre",
+                "periodo"
+            ],
+            "size": [
+                4,
+                4,
+                3,
+                1,
+                2
+            ],
+            "role": {
+                "time": [
+                    "periodo"
+                ]
+            }
+        },
+        "label": "Población de 16 y más años ocupada asalariada (miles) de la C.A. de Euskadi por tipo de contrato, territorio histórico, sexo, trimestre y periodo",
+        "source": "Eustat-Instituto Vasco de Estadística: Encuesta de población en relación con la actividad",
+        "updated": "9999-12-31T22:59:59Z",
+        "value": [
+            821,
+            840.5,
+            413.9,
+            421.8,
+            407.1,
+            418.7,
+            128.2,
+            133,
+            64.8,
+            68.4,
+            63.5,
+            64.7,
+            427.2,
+            435.7,
+            218.8,
+            219.8,
+            208.4,
+            215.9,
+            265.6,
+            271.7,
+            130.3,
+            133.5,
+            135.3,
+            138.2,
+            654.3,
+            675.9,
+            342.4,
+            352.3,
+            311.8,
+            323.6,
+            102.3,
+            108,
+            54,
+            58.3,
+            48.3,
+            49.7,
+            340.5,
+            352.2,
+            180.1,
+            183.9,
+            160.3,
+            168.3,
+            211.5,
+            215.7,
+            108.3,
+            110.1,
+            103.2,
+            105.6,
+            160.1,
+            155.4,
+            69.3,
+            66.7,
+            90.8,
+            88.7,
+            25.4,
+            24,
+            10.6,
+            9.9,
+            14.8,
+            14.2,
+            83.6,
+            79.9,
+            38,
+            35.7,
+            45.5,
+            44.2,
+            51.1,
+            51.4,
+            20.7,
+            21.1,
+            30.4,
+            30.3,
+            6.6,
+            9.2,
+            2.2,
+            2.8,
+            4.5,
+            6.4,
+            0.5,
+            1,
+            0.2,
+            0.2,
+            0.3,
+            0.8,
+            3.2,
+            3.6,
+            0.7,
+            0.2,
+            2.5,
+            3.4,
+            3,
+            4.7,
+            1.3,
+            2.4,
+            1.7,
+            2.3
+        ],
+        "extension": {
+            "px": {
+                "decimals": 1
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import requests, json
+import requests, json, os
 
 # Renta personal media de la C.A. de Euskadi por edad, según sexo y tipo de renta (euros). 2001 - 2024
 # De aquí sacamos los datos de la media de los ingresos de la gente de 16-34 años de Euskadi.
@@ -22,7 +22,10 @@ def rentaMedia ():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        with open("mediaRenta.json", "w", encoding="utf-8") as file_json:
+        directorio_destino = "datos/raw" 
+        nombre_archivo = "mediaRenta.json"
+        ruta_completa = os.path.join(directorio_destino, nombre_archivo)
+        with open(ruta_completa, "w", encoding="utf-8") as file_json:
             json.dump(datos, file_json, indent=4, ensure_ascii=False)
     else:
         print("Mensaje del servidor:", r.text)
@@ -71,7 +74,10 @@ def poblacionActivaPorMunicipio():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        with open("activosMunicipio.json", "w", encoding="utf-8") as file_json:
+        directorio_destino = "datos/raw" 
+        nombre_archivo = "activosMunicipio.json"
+        ruta_completa = os.path.join(directorio_destino, nombre_archivo)
+        with open(ruta_completa, "w", encoding="utf-8") as file_json:
             json.dump(datos, file_json, indent=4, ensure_ascii=False)
     else:
         print("Mensaje del servidor:", r.text)
@@ -118,7 +124,10 @@ def asalariadosTipoContrato():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        with open("asalariadosTipoContrato.json", "w", encoding="utf-8") as file_json:
+        directorio_destino = "datos/raw" 
+        nombre_archivo = "asalariadosTipoContrato.json"
+        ruta_completa = os.path.join(directorio_destino, nombre_archivo)
+        with open(ruta_completa, "w", encoding="utf-8") as file_json:
             json.dump(datos, file_json, indent=4, ensure_ascii=False)
     else:
         print("Mensaje del servidor:", r.text)
@@ -183,7 +192,10 @@ def poblacionEuskadi():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        with open("poblacionEuskadi.json", "w", encoding="utf-8") as file_json:
+        directorio_destino = "datos/raw" 
+        nombre_archivo = "poblacionEuskadi.json"
+        ruta_completa = os.path.join(directorio_destino, nombre_archivo)
+        with open(ruta_completa, "w", encoding="utf-8") as file_json:
             json.dump(datos, file_json, indent=4, ensure_ascii=False)
     else:
         print("Mensaje del servidor:", r.text)
@@ -218,7 +230,10 @@ def viviendasEuskadi():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        with open("viviendasEuskadi.json", "w", encoding="utf-8") as file_json:
+        directorio_destino = "datos/raw" 
+        nombre_archivo = "viviendasEuskadi.json"
+        ruta_completa = os.path.join(directorio_destino, nombre_archivo)
+        with open(ruta_completa, "w", encoding="utf-8") as file_json:
             json.dump(datos, file_json, indent=4, ensure_ascii=False)
     else:
         print("Mensaje del servidor:", r.text)
@@ -238,3 +253,9 @@ def viviendasEuskadi():
 # RentaMensualMediaEnEurosmes.csv
 # Contiene el coste absoluto medio mensual por vivienda (€/mes) que pagan los inquilinos 
 # según el trimestre en que se inició el contrato.
+
+rentaMedia()
+poblacionActivaPorMunicipio()
+asalariadosTipoContrato()
+poblacionEuskadi()
+viviendasEuskadi()

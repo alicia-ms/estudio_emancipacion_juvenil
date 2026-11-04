@@ -1,0 +1,111 @@
+{
+    "dataset": {
+        "dimension": {
+            "sexo": {
+                "label": "sexo",
+                "category": {
+                    "index": {
+                        "10": 0,
+                        "20": 1,
+                        "30": 2
+                    },
+                    "label": {
+                        "10": "Total",
+                        "20": "Hombres",
+                        "30": "Mujeres"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "tipo de renta": {
+                "label": "tipo de renta",
+                "category": {
+                    "index": {
+                        "110": 0
+                    },
+                    "label": {
+                        "110": "Renta del trabajo"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "edad": {
+                "label": "edad",
+                "category": {
+                    "index": {
+                        "110": 0,
+                        "120": 1,
+                        "130": 2,
+                        "140": 3
+                    },
+                    "label": {
+                        "110": "18 - 19 años",
+                        "120": "20 - 24 años",
+                        "130": "25 - 29 años",
+                        "140": "30 - 34 años"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "periodo": {
+                "label": "periodo",
+                "category": {
+                    "index": {
+                        "2024": 0
+                    },
+                    "label": {
+                        "2024": "2024"
+                    }
+                },
+                "extension": {
+                    "show": "value"
+                }
+            },
+            "id": [
+                "sexo",
+                "tipo de renta",
+                "edad",
+                "periodo"
+            ],
+            "size": [
+                3,
+                1,
+                4,
+                1
+            ],
+            "role": {
+                "time": [
+                    "periodo"
+                ]
+            }
+        },
+        "label": "Renta personal media de la C.A. de Euskadi (euros) por sexo, tipo de renta, edad y periodo",
+        "source": "Eustat. Estadística de renta personal y familiar",
+        "updated": "9999-12-31T22:59:59Z",
+        "value": [
+            1077,
+            7097,
+            18005,
+            21854,
+            1255,
+            8254,
+            19574,
+            24080,
+            886,
+            5864,
+            16376,
+            19596
+        ],
+        "extension": {
+            "px": {
+                "decimals": 0
+            }
+        }
+    }
+}
