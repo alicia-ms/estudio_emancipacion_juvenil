@@ -9,6 +9,7 @@ import unicodedata
 from playwright.sync_api import sync_playwright
 
 BASE = "https://www.fotocasa.es"
+MIN_ANUNCIOS = 5
 
 SUBTIPOS = {
     "Flat": "Piso",
@@ -133,7 +134,7 @@ def scrape_ciudad(pagina, url_base):
 
 def cargar_datos(url_zona, nombre):
     with sync_playwright() as p:
-        navegador = p.chromium.launch(headless=True) 
+        navegador = p.chromium.launch(headless=True)
         contexto = navegador.new_context(
             locale="es-ES",
             user_agent=(
@@ -144,6 +145,10 @@ def cargar_datos(url_zona, nombre):
         pagina = contexto.new_page()
         viviendas = scrape_ciudad(pagina, url_zona)
         navegador.close()
+
+    if len(viviendas) < MIN_ANUNCIOS:
+        print(f"{nombre}: solo {len(viviendas)} anuncios (mínimo {MIN_ANUNCIOS}). No se guarda.")
+        return
 
     os.makedirs("datos/raw", exist_ok=True)
     with open(f"datos/raw/{nombre}.json", "w", encoding="utf-8") as f:

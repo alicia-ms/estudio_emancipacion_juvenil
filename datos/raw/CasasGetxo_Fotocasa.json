@@ -28,20 +28,6 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-parking-ascensor-amueblado/190365490/d"
     },
     {
-        "Id": 191179318,
-        "Titulo": "Piso en Calle Caja de Ahorros Kalea, Las Arenas",
-        "Barrio": null,
-        "Distrito": "Las Arenas",
-        "Precio": 1150,
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 82,
-        "Planta": "3ª Planta",
-        "PrecioM2": 14.02,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-terraza-ascensor-amueblado/191179318/d"
-    },
-    {
         "Id": 191180695,
         "Titulo": "Piso en Calle Mugarra Kalea, Santa María de Getxo",
         "Barrio": null,
@@ -54,20 +40,6 @@
         "Planta": "2ª Planta",
         "PrecioM2": 12.34,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-parking-terraza-ascensor-no-amueblado/191180695/d"
-    },
-    {
-        "Id": 188220651,
-        "Titulo": "Piso en Ormatzabekoa Kalea, Santa María de Getxo",
-        "Barrio": null,
-        "Distrito": "Santa María de Getxo",
-        "Precio": 1900,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 130,
-        "Planta": "1ª Planta",
-        "PrecioM2": 14.62,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-parking-terraza-trastero-ascensor-amueblado/188220651/d"
     },
     {
         "Id": 185889521,
@@ -154,6 +126,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-terraza-ascensor-amueblado/184459984/d"
     },
     {
+        "Id": 191004984,
+        "Titulo": "Piso en Getxo - kresaltzu, Las Arenas",
+        "Barrio": null,
+        "Distrito": "Las Arenas",
+        "Precio": 1200,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 70,
+        "Planta": "2ª Planta",
+        "PrecioM2": 17.14,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-ascensor-no-amueblado/191004984/d"
+    },
+    {
         "Id": 186659400,
         "Titulo": "Piso en Las Arenas",
         "Barrio": null,
@@ -194,20 +180,6 @@
         "Planta": "Bajos",
         "PrecioM2": 28.33,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/terraza/191036893/d"
-    },
-    {
-        "Id": 191036180,
-        "Titulo": "Piso en Las Arenas",
-        "Barrio": null,
-        "Distrito": "Las Arenas",
-        "Precio": 1200,
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 83,
-        "Planta": "1ª Planta",
-        "PrecioM2": 14.46,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/getxo/calefaccion-ascensor/191036180/d"
     },
     {
         "Id": 187675563,

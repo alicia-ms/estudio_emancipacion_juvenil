@@ -1,9 +1,13 @@
+import os
+
 from bs4 import BeautifulSoup
 import json
 import re
 import unicodedata
 import pandas as pd
 from playwright.sync_api import sync_playwright
+
+MIN_ANUNCIOS = 3
 
 
 def limpiar_precio(texto):
@@ -117,10 +121,8 @@ def extraer_municipios():
     municipios = df["municipio (> 40.000 habitantes)"].unique()
     return municipios
 
-
 def cargar_datos(urlZona, nombre):
     with sync_playwright() as p:
-
         navegador = p.chromium.launch(headless=True)
         pagina = navegador.new_page()
 
@@ -128,10 +130,15 @@ def cargar_datos(urlZona, nombre):
 
         navegador.close()
 
+    if len(viviendas) < MIN_ANUNCIOS:
+        print(f"{nombre}: solo {len(viviendas)} anuncios (mínimo {MIN_ANUNCIOS}). No se guarda.")
+        return
+
+    os.makedirs("datos/raw", exist_ok=True)
     with open(f"datos/raw/{nombre}.json", "w", encoding="utf-8") as f:
         json.dump(viviendas, f, indent=4, ensure_ascii=False)
-
-# URLS
+    print(f"Guardado datos/raw/{nombre}.json ({len(viviendas)} anuncios)")
+    
 
 if __name__ == "__main__":
     municipios = extraer_municipios()

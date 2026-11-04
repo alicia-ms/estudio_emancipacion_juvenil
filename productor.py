@@ -8,19 +8,16 @@ RAW = "/user/iabd-user10/reto_vivienda/raw"
 
 
 TOPIC = "anuncios_vivienda"
-producer = Producer({"bootstrap.servers": "IP_DE_KAFKA:9092"}) # atencion: sustituir IP_DE_KAFKA por la IP del contenedor de Kafka
+producer = Producer({"bootstrap.servers": "10.22.87.215:9092"})
 
 
 def leer_json(ruta_hdfs):
     with client.read(ruta_hdfs, encoding="utf-8") as f:
         return json.load(f)
 
-
 def entregado(err, msg):
-    """Kafka llama a esta función por cada mensaje: confirma si llegó o falló."""
     if err:
         print(f"Error al enviar: {err}")
-
 
 enviados = 0
 for carpeta, _, ficheros in client.walk(RAW):

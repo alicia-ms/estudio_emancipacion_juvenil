@@ -28,34 +28,6 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/calefaccion-terraza-amueblado/191094148/d"
     },
     {
-        "Id": 187428596,
-        "Titulo": "Piso en Antonio Alzaga Etorbidea, 14, Larrea - San Juan de Dios - Peñota",
-        "Barrio": null,
-        "Distrito": "Larrea - San Juan de Dios - Peñota",
-        "Precio": 1550,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 2,
-        "Metros": 80,
-        "Planta": null,
-        "PrecioM2": 19.38,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/aire-acondicionado-ascensor-amueblado/187428596/d"
-    },
-    {
-        "Id": 185556238,
-        "Titulo": "Piso en Larrea - San Juan de Dios - Peñota",
-        "Barrio": null,
-        "Distrito": "Larrea - San Juan de Dios - Peñota",
-        "Precio": 2000,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 2,
-        "Metros": 70,
-        "Planta": "1ª Planta",
-        "PrecioM2": 28.57,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/calefaccion-terraza-ascensor-amueblado/185556238/d"
-    },
-    {
         "Id": 189981191,
         "Titulo": "Piso en Mamariga",
         "Barrio": null,

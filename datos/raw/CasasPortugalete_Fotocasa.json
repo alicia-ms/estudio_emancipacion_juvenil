@@ -14,6 +14,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/ascensor-amueblado/179475390/d"
     },
     {
+        "Id": 190943913,
+        "Titulo": "Piso en Casco Viejo - Muelle",
+        "Barrio": null,
+        "Distrito": "Casco Viejo - Muelle",
+        "Precio": 1000,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 55,
+        "Planta": "1ª Planta",
+        "PrecioM2": 18.18,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/calefaccion-trastero-ascensor-no-amueblado/190943913/d"
+    },
+    {
         "Id": 190841862,
         "Titulo": "Apartamento en Casco Viejo - Muelle",
         "Barrio": null,
@@ -26,20 +40,6 @@
         "Planta": "Bajos",
         "PrecioM2": 1.6,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/jardin-terraza-ascensor-piscina-se-aceptan-mascotas/190841862/d"
-    },
-    {
-        "Id": 191234371,
-        "Titulo": "Piso en Araba Kalea, Centro",
-        "Barrio": null,
-        "Distrito": "Centro",
-        "Precio": 950,
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 71,
-        "Planta": "1ª Planta",
-        "PrecioM2": 13.38,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/portugalete/calefaccion-terraza-ascensor-amueblado-television/191234371/d"
     },
     {
         "Id": 189221982,

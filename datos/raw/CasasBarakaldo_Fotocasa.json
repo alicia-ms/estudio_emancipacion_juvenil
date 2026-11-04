@@ -1,19 +1,5 @@
 [
     {
-        "Id": 189029974,
-        "Titulo": "Piso en Calle Ramón Zabalo, Centro",
-        "Barrio": null,
-        "Distrito": "Centro",
-        "Precio": 1800,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 2,
-        "Metros": 71,
-        "Planta": "4ª Planta",
-        "PrecioM2": 25.35,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-ascensor-amueblado/189029974/d"
-    },
-    {
         "Id": 187246668,
         "Titulo": "GroundFloorWithGarden en Turina Kalea, 4, Lutxana - Llano",
         "Barrio": null,
@@ -26,6 +12,48 @@
         "Planta": "Bajos",
         "PrecioM2": 26.32,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-amueblado-television-internet/187246668/d"
+    },
+    {
+        "Id": 191302544,
+        "Titulo": "Piso en Leon Kalea, Arteagabeitia - Retuerto - Kareaga",
+        "Barrio": null,
+        "Distrito": "Arteagabeitia - Retuerto - Kareaga",
+        "Precio": 1200,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 3,
+        "Banos": 1,
+        "Metros": 70,
+        "Planta": "1ª Planta",
+        "PrecioM2": 17.14,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-terraza-ascensor-amueblado/191302544/d"
+    },
+    {
+        "Id": 191280949,
+        "Titulo": "Apartamento en Horacio Etxebarrieta Kalea, Cruces",
+        "Barrio": null,
+        "Distrito": "Cruces",
+        "Precio": 1200,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 50,
+        "Planta": "7ª Planta",
+        "PrecioM2": 24.0,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-ascensor-amueblado-piscina/191280949/d"
+    },
+    {
+        "Id": 191108942,
+        "Titulo": "Piso en Ramon y Cajal Kalea, Lasesarre",
+        "Barrio": null,
+        "Distrito": "Lasesarre",
+        "Precio": 850,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 60,
+        "Planta": "4ª Planta",
+        "PrecioM2": 14.17,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-amueblado/191108942/d"
     },
     {
         "Id": 188951639,
