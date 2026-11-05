@@ -4,7 +4,7 @@ import itertools
 from pymongo import MongoClient
 
 client = MongoClient("mongodb://localhost:27017/")
-db = client["emancipacion_bizkaia"]  
+db = client["emancipacion_euskadi"]  
 
 def limpiar_einsertar_coleccion(nombre_archivo_json, nombre_coleccion):
     print(f"\n--- Procesando: {nombre_archivo_json} para la colección '{nombre_coleccion}' ---")
@@ -129,11 +129,11 @@ def limpiar_datos(registros_planos):
     return list(unicos.values())       
 
 ficheros_a_limpiar = [
-    ("mediaRenta.json", "rentas_jovenes"),
-    ("activosMunicipio.json", "poblacion_activa"),
-    ("asalariadosTipoContrato.json", "asalariados_contrato"),
-    ("poblacionTotalPorPoblacion.json", "poblacion_demografia"),
-    ("viviendasEuskadi.json", "vivienda_tenencia")
+    ("../../datos/raw/Api/mediaRenta.json", "rentas_jovenes"),
+    ("../../datos/raw/Api/activosMunicipio.json", "poblacion_activa"),
+    ("../../datos/raw/Api/asalariadosTipoContrato.json", "asalariados_contrato"),
+    ("../../datos/raw/Api/poblacionEuskadi.json", "poblacion_demografia"),
+    ("../../datos/raw/Api/viviendasEuskadi.json", "vivienda_tenencia")
 ]
 
 # Ejecución del proceso de limpieza por lotes
