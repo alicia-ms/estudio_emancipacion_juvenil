@@ -1,19 +1,5 @@
 [
     {
-        "Id": 187246668,
-        "Titulo": "GroundFloorWithGarden en Turina Kalea, 4, Lutxana - Llano",
-        "Barrio": null,
-        "Distrito": "Lutxana - Llano",
-        "Precio": 1500,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 57,
-        "Planta": "Bajos",
-        "PrecioM2": 26.32,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-amueblado-television-internet/187246668/d"
-    },
-    {
         "Id": 191302544,
         "Titulo": "Piso en Leon Kalea, Arteagabeitia - Retuerto - Kareaga",
         "Barrio": null,
@@ -82,20 +68,6 @@
         "Planta": null,
         "PrecioM2": 43.4,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-ascensor-amueblado/188951617/d"
-    },
-    {
-        "Id": 187798422,
-        "Titulo": "Apartamento en Cirilo Sagastagoitia Ibilbidea, Lutxana - Llano",
-        "Barrio": null,
-        "Distrito": "Lutxana - Llano",
-        "Precio": 1500,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 45,
-        "Planta": "Bajos",
-        "PrecioM2": 33.33,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-amueblado-television-internet/187798422/d"
     },
     {
         "Id": 189749422,

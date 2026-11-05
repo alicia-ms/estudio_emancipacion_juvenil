@@ -14,7 +14,7 @@ def entregado(err, msg):
 
 
 enviados = 0
-for ruta_local in sorted(glob.glob("datos/raw/*/*.*")):
+for ruta_local in sorted(glob.glob("../../datos/raw/*/*.*")):
     fuente = os.path.basename(os.path.dirname(ruta_local))   # nombre de la carpeta
     fichero = os.path.basename(ruta_local)
 

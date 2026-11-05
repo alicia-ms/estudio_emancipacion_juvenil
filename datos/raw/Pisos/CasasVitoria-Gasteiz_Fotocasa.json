@@ -112,6 +112,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/vitoria-gasteiz/calefaccion-terraza-ascensor-amueblado/190348977/d"
     },
     {
+        "Id": 191307396,
+        "Titulo": "Piso en TARRAGONA, Lakua-Bizkarra",
+        "Barrio": null,
+        "Distrito": "Lakua-Bizkarra",
+        "Precio": 1057,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 90,
+        "Planta": "4ª Planta",
+        "PrecioM2": 11.74,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/vitoria-gasteiz/calefaccion-parking-trastero-ascensor-amueblado/191307396/d"
+    },
+    {
         "Id": 189913067,
         "Titulo": "Piso en JOSE ATXOTEGI, Gazalbide",
         "Barrio": null,

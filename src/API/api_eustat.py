@@ -230,7 +230,7 @@ def viviendasEuskadi():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        directorio_destino = "datos/raw/Api" 
+        directorio_destino = "../../datos/raw/Api" 
         nombre_archivo = "viviendasEuskadi.json"
         ruta_completa = os.path.join(directorio_destino, nombre_archivo)
         with open(ruta_completa, "w", encoding="utf-8") as file_json:
