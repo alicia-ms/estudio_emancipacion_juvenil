@@ -32,6 +32,7 @@ def numero(valor):
 
     if isinstance(valor, (int, float)):
         return valor
+
     valor = str(valor).strip()
 
     if not valor or valor.lower() in ("null", "none", "nan", "a consultar"):
@@ -44,14 +45,22 @@ def numero(valor):
             valor = valor.replace(".", "").replace(",", ".")
         else:
             valor = valor.replace(",", "")
+
     elif "," in valor:
         valor = valor.replace(",", ".")
+
+    elif "." in valor:
+        partes = valor.split(".")
+
+        if len(partes) == 2 and len(partes[1]) == 3:
+            valor = valor.replace(".", "")
 
     try:
         n = float(valor)
         return int(n) if n.is_integer() else n
     except ValueError:
         return None
+
 
 def normalizar(valor):
     valor = str(valor or "").lower()
