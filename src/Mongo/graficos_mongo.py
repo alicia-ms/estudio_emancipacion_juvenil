@@ -2,11 +2,14 @@
 from pymongo import MongoClient
 import matplotlib.pyplot as plt
 import os
+import statistics
+import re
 
 cliente = MongoClient("mongodb://localhost:27017/")
 
 bd = cliente["emancipacion_euskadi"]
 pisos = bd["pisos"]
+rentas = bd["rentas_jovenes"]
 
 CARPETA_GRAFICOS = os.path.join(
     os.path.dirname(__file__),
@@ -282,6 +285,188 @@ def grafico_superficie_precio():
 
     print("Grafico 3 guardado en:", ruta)
 
+
+
+def grafico_ingresos_alquiler():
+
+    ingresos = list(rentas.find(
+        {
+            "sexo": "Total",
+            "tipo de renta": "Renta del trabajo",
+            "periodo": 2024,
+            "valor": {"$type": "number", "$gt": 0}
+        },
+        {
+            "_id": 0,
+            "edad": 1,
+            "valor": 1
+        }
+    ))
+
+    precios = [
+        float(p["Precio"])
+        for p in pisos.find(FILTRO_BASE, {"Precio": 1})
+    ]
+
+    if not ingresos or not precios:
+        print("No hay datos suficientes para el grafico 4.")
+        return
+
+    alquiler_mediano = statistics.median(precios)
+
+    ingresos.sort(key=lambda x: int(
+        re.search(r"\d+", x["edad"]).group()
+    ))
+
+    edades = [d["edad"] for d in ingresos]
+
+    # Eustat proporciona la renta en euros anuales.
+    # La dividimos entre 12 para obtener una equivalencia mensual.
+    ingresos_mensuales = [
+        d["valor"] / 12 for d in ingresos
+    ]
+
+    plt.figure(figsize=(11, 6))
+
+    plt.bar(
+        edades,
+        ingresos_mensuales,
+        label="Renta mensual equivalente"
+    )
+
+    plt.axhline(
+        alquiler_mediano,
+        linestyle="--",
+        label=f"Alquiler mediano: {alquiler_mediano:.2f} €"
+    )
+
+    plt.title(
+        "Ingresos de los jóvenes frente al precio del alquiler",
+        fontsize=14
+    )
+
+    plt.xlabel("Grupo de edad")
+    plt.ylabel("Euros mensuales (€)")
+    plt.xticks(rotation=25, ha="right")
+
+    plt.legend()
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+
+    ruta = os.path.join(
+        CARPETA_GRAFICOS,
+        "grafico4_ingresos_alquiler.png"
+    )
+
+    plt.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.show()
+    plt.close()
+
+    print("Grafico 4 guardado en:", ruta)
+
+
+    
+def grafico_porcentaje_alquiler():
+
+    ingresos = list(rentas.find(
+        {
+            "sexo": "Total",
+            "tipo de renta": "Renta del trabajo",
+            "periodo": 2024,
+            "valor": {"$type": "number", "$gt": 0}
+        },
+        {
+            "_id": 0,
+            "edad": 1,
+            "valor": 1
+        }
+    ))
+
+    precios = [
+        float(p["Precio"])
+        for p in pisos.find(FILTRO_BASE, {"Precio": 1})
+    ]
+
+    if not ingresos or not precios:
+        print("No hay datos suficientes para el grafico 5.")
+        return
+
+    alquiler_mediano = statistics.median(precios)
+
+    ingresos.sort(key=lambda x: int(
+        re.search(r"\d+", x["edad"]).group()
+    ))
+
+    edades = []
+    porcentajes = []
+
+    for dato in ingresos:
+
+        ingreso_mensual = dato["valor"] / 12
+
+        if ingreso_mensual <= 0:
+            continue
+
+        porcentaje = (
+            alquiler_mediano / ingreso_mensual
+        ) * 100
+
+        edades.append(dato["edad"])
+        porcentajes.append(porcentaje)
+
+    if not porcentajes:
+        print("No hay ingresos validos para el grafico 5.")
+        return
+
+    plt.figure(figsize=(11, 6))
+
+    barras = plt.bar(edades, porcentajes)
+
+    plt.axhline(
+        30,
+        color="red",
+        linestyle="--",
+        label="Referencia orientativa del 30%"
+    )
+
+    plt.title(
+        "Porcentaje de los ingresos destinado al alquiler",
+        fontsize=14
+    )
+
+    plt.xlabel("Grupo de edad")
+    plt.ylabel("Porcentaje de los ingresos (%)")
+
+    plt.xticks(rotation=25, ha="right")
+
+    for barra, porcentaje in zip(barras, porcentajes):
+
+        plt.text(
+            barra.get_x() + barra.get_width() / 2,
+            barra.get_height(),
+            f"{porcentaje:.1f}%",
+            ha="center",
+            va="bottom",
+            fontsize=9
+        )
+
+    plt.legend()
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+
+    ruta = os.path.join(
+        CARPETA_GRAFICOS,
+        "grafico5_porcentaje_alquiler.png"
+    )
+
+    plt.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.show()
+    plt.close()
+
+    print("Grafico 5 guardado en:", ruta)
+
+
+
 if __name__ == "__main__":
 
     try:
@@ -293,6 +478,10 @@ if __name__ == "__main__":
         grafico_distribucion_precios()
 
         grafico_superficie_precio()
+
+        grafico_ingresos_alquiler()
+
+        grafico_porcentaje_alquiler()
 
         print("\nProceso de graficos finalizado.")
 
