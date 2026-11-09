@@ -129,11 +129,11 @@ def limpiar_datos(registros_planos):
     return list(unicos.values())       
 
 ficheros_a_limpiar = [
-    ("../../datos/raw/Api/mediaRenta.json", "rentas_jovenes"),
-    ("../../datos/raw/Api/activosMunicipio.json", "poblacion_activa"),
-    ("../../datos/raw/Api/asalariadosTipoContrato.json", "asalariados_contrato"),
-    ("../../datos/raw/Api/poblacionEuskadi.json", "poblacion_demografia"),
-    ("../../datos/raw/Api/viviendasEuskadi.json", "vivienda_tenencia")
+    ("datos/raw/Api/mediaRenta.json", "rentas_jovenes"),
+    ("datos/raw/Api/activosMunicipio.json", "poblacion_activa"),
+    ("datos/raw/Api/asalariadosTipoContrato.json", "asalariados_contrato"),
+    ("datos/raw/Api/poblacionEuskadi.json", "poblacion_demografia"),
+    ("datos/raw/Api/viviendasEuskadi.json", "vivienda_tenencia")
 ]
 
 # Ejecución del proceso de limpieza por lotes
