@@ -18,34 +18,35 @@ CARPETA_GRAFICOS = os.path.join(
 
 os.makedirs(CARPETA_GRAFICOS, exist_ok=True)
 
-FILTRO_BASE = {
-    "TipoContrato": "Larga estancia",
-    "Municipio": {"$ne": None},
-    "Precio": {
-        "$type": "number",
-        "$gt": 0
-    }
-}
-
 MINIMO_ANUNCIOS = 3
 
-def grafico_precio_medio():
+
+def obtener_filtro(contrato):
+    return {
+        "TipoContrato": contrato,
+        "Municipio": {"$ne": None},
+        "Precio": {
+            "$type": "number",
+            "$gt": 0
+        }
+    }
+
+
+def grafico_precio_medio(contrato):
+
+    filtro = obtener_filtro(contrato)
 
     resultado = pisos.aggregate([
 
         {
-            "$match": FILTRO_BASE
+            "$match": filtro
         },
 
         {
             "$group": {
                 "_id": "$Municipio",
-                "precio_medio": {
-                    "$avg": "$Precio"
-                },
-                "total_anuncios": {
-                    "$sum": 1
-                }
+                "precio_medio": {"$avg": "$Precio"},
+                "total_anuncios": {"$sum": 1}
             }
         },
 
@@ -79,7 +80,7 @@ def grafico_precio_medio():
     datos = list(resultado)
 
     if not datos:
-        print("No hay datos suficientes para el grafico 1.")
+        print(f"No hay datos suficientes para el precio medio de {contrato}.")
         return
 
     municipios = [d["municipio"] for d in datos]
@@ -91,7 +92,7 @@ def grafico_precio_medio():
     barras = plt.bar(municipios, precios)
 
     plt.title(
-        "Precio medio del alquiler por municipio",
+        f"Precio medio del alquiler por municipio - {contrato}",
         fontsize=14
     )
 
@@ -102,11 +103,9 @@ def grafico_precio_medio():
 
     for barra, cantidad in zip(barras, cantidades):
 
-        altura = barra.get_height()
-
         plt.text(
             barra.get_x() + barra.get_width() / 2,
-            altura,
+            barra.get_height(),
             f"{cantidad} anuncios",
             ha="center",
             va="bottom",
@@ -116,22 +115,22 @@ def grafico_precio_medio():
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
 
-    ruta = os.path.join(
-        CARPETA_GRAFICOS,
-        "grafico1_precio_medio.png"
-    )
+    nombre = f"grafico1_precio_medio_{contrato.replace(' ', '_')}.png"
+    ruta = os.path.join(CARPETA_GRAFICOS, nombre)
 
     plt.savefig(ruta, dpi=300, bbox_inches="tight")
     plt.show()
     plt.close()
 
-    print("Grafico 1 guardado en:", ruta)
+    print("Grafico guardado en:", ruta)
 
 
-def grafico_distribucion_precios():
+def grafico_distribucion_precios(contrato):
+
+    filtro = obtener_filtro(contrato)
 
     resultado = pisos.find(
-        FILTRO_BASE,
+        filtro,
         {
             "_id": 0,
             "Municipio": 1,
@@ -158,7 +157,7 @@ def grafico_distribucion_precios():
     }
 
     if len(precios_por_municipio) < 2:
-        print("No hay suficientes municipios para el grafico 2.")
+        print(f"No hay suficientes municipios para la distribución de {contrato}.")
         return
 
     municipios = sorted(precios_por_municipio.keys())
@@ -171,12 +170,13 @@ def grafico_distribucion_precios():
     plt.figure(figsize=(12, 7))
 
     plt.boxplot(
-    datos,
-    tick_labels=municipios,
-    showmeans=True)
+        datos,
+        tick_labels=municipios,
+        showmeans=True
+    )
 
     plt.title(
-        "Distribucion de precios del alquiler por municipio",
+        f"Distribución de precios del alquiler por municipio - {contrato}",
         fontsize=14
     )
 
@@ -188,21 +188,20 @@ def grafico_distribucion_precios():
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
 
-    ruta = os.path.join(
-        CARPETA_GRAFICOS,
-        "grafico2_distribucion_precios.png"
-    )
+    nombre = f"grafico2_distribucion_precios_{contrato.replace(' ', '_')}.png"
+    ruta = os.path.join(CARPETA_GRAFICOS, nombre)
 
     plt.savefig(ruta, dpi=300, bbox_inches="tight")
     plt.show()
     plt.close()
 
-    print("Grafico 2 guardado en:", ruta)
+    print("Grafico guardado en:", ruta)
 
-def grafico_superficie_precio():
+
+def grafico_superficie_precio(contrato):
 
     filtro = {
-        **FILTRO_BASE,
+        **obtener_filtro(contrato),
         "Metros": {
             "$type": "number",
             "$gt": 0
@@ -243,7 +242,7 @@ def grafico_superficie_precio():
     }
 
     if not datos_por_municipio:
-        print("No hay datos suficientes para el grafico 3.")
+        print(f"No hay datos suficientes para la superficie y precio de {contrato}.")
         return
 
     plt.figure(figsize=(11, 7))
@@ -258,7 +257,7 @@ def grafico_superficie_precio():
         )
 
     plt.title(
-        "Relacion entre superficie y precio del alquiler",
+        f"Relación entre superficie y precio - {contrato}",
         fontsize=14
     )
 
@@ -274,27 +273,29 @@ def grafico_superficie_precio():
     plt.grid(alpha=0.3)
     plt.tight_layout()
 
-    ruta = os.path.join(
-        CARPETA_GRAFICOS,
-        "grafico3_superficie_precio.png"
-    )
+    nombre = f"grafico3_superficie_precio_{contrato.replace(' ', '_')}.png"
+    ruta = os.path.join(CARPETA_GRAFICOS, nombre)
 
     plt.savefig(ruta, dpi=300, bbox_inches="tight")
     plt.show()
     plt.close()
 
-    print("Grafico 3 guardado en:", ruta)
+    print("Grafico guardado en:", ruta)
 
 
+def grafico_ingresos_alquiler(contrato):
 
-def grafico_ingresos_alquiler():
+    filtro = obtener_filtro(contrato)
 
     ingresos = list(rentas.find(
         {
             "sexo": "Total",
             "tipo de renta": "Renta del trabajo",
             "periodo": 2024,
-            "valor": {"$type": "number", "$gt": 0}
+            "valor": {
+                "$type": "number",
+                "$gt": 0
+            }
         },
         {
             "_id": 0,
@@ -305,11 +306,11 @@ def grafico_ingresos_alquiler():
 
     precios = [
         float(p["Precio"])
-        for p in pisos.find(FILTRO_BASE, {"Precio": 1})
+        for p in pisos.find(filtro, {"Precio": 1})
     ]
 
     if not ingresos or not precios:
-        print("No hay datos suficientes para el grafico 4.")
+        print(f"No hay datos suficientes para ingresos y alquiler de {contrato}.")
         return
 
     alquiler_mediano = statistics.median(precios)
@@ -320,8 +321,6 @@ def grafico_ingresos_alquiler():
 
     edades = [d["edad"] for d in ingresos]
 
-    # Eustat proporciona la renta en euros anuales.
-    # La dividimos entre 12 para obtener una equivalencia mensual.
     ingresos_mensuales = [
         d["valor"] / 12 for d in ingresos
     ]
@@ -341,39 +340,42 @@ def grafico_ingresos_alquiler():
     )
 
     plt.title(
-        "Ingresos de los jóvenes frente al precio del alquiler",
+        f"Ingresos de los jóvenes frente al alquiler - {contrato}",
         fontsize=14
     )
 
     plt.xlabel("Grupo de edad")
     plt.ylabel("Euros mensuales (€)")
+
     plt.xticks(rotation=25, ha="right")
 
     plt.legend()
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
 
-    ruta = os.path.join(
-        CARPETA_GRAFICOS,
-        "grafico4_ingresos_alquiler.png"
-    )
+    nombre = f"grafico4_ingresos_alquiler_{contrato.replace(' ', '_')}.png"
+    ruta = os.path.join(CARPETA_GRAFICOS, nombre)
 
     plt.savefig(ruta, dpi=300, bbox_inches="tight")
     plt.show()
     plt.close()
 
-    print("Grafico 4 guardado en:", ruta)
+    print("Grafico guardado en:", ruta)
 
 
-    
-def grafico_porcentaje_alquiler():
+def grafico_porcentaje_alquiler(contrato):
+
+    filtro = obtener_filtro(contrato)
 
     ingresos = list(rentas.find(
         {
             "sexo": "Total",
             "tipo de renta": "Renta del trabajo",
             "periodo": 2024,
-            "valor": {"$type": "number", "$gt": 0}
+            "valor": {
+                "$type": "number",
+                "$gt": 0
+            }
         },
         {
             "_id": 0,
@@ -384,11 +386,11 @@ def grafico_porcentaje_alquiler():
 
     precios = [
         float(p["Precio"])
-        for p in pisos.find(FILTRO_BASE, {"Precio": 1})
+        for p in pisos.find(filtro, {"Precio": 1})
     ]
 
     if not ingresos or not precios:
-        print("No hay datos suficientes para el grafico 5.")
+        print(f"No hay datos suficientes para el porcentaje de {contrato}.")
         return
 
     alquiler_mediano = statistics.median(precios)
@@ -415,7 +417,7 @@ def grafico_porcentaje_alquiler():
         porcentajes.append(porcentaje)
 
     if not porcentajes:
-        print("No hay ingresos validos para el grafico 5.")
+        print(f"No hay ingresos válidos para el porcentaje de {contrato}.")
         return
 
     plt.figure(figsize=(11, 6))
@@ -430,7 +432,7 @@ def grafico_porcentaje_alquiler():
     )
 
     plt.title(
-        "Porcentaje de los ingresos destinado al alquiler",
+        f"Porcentaje de ingresos destinado al alquiler - {contrato}",
         fontsize=14
     )
 
@@ -454,17 +456,170 @@ def grafico_porcentaje_alquiler():
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
 
+    nombre = f"grafico5_porcentaje_alquiler_{contrato.replace(' ', '_')}.png"
+    ruta = os.path.join(CARPETA_GRAFICOS, nombre)
+
+    plt.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.show()
+    plt.close()
+
+    print("Grafico guardado en:", ruta)
+
+
+def grafico_proporcion_contratos():
+
+    resultado = list(pisos.aggregate([
+        {
+            "$match": {
+                "TipoContrato": {
+                    "$in": ["Larga estancia", "Temporada"]
+                }
+            }
+        },
+        {
+            "$group": {
+                "_id": "$TipoContrato",
+                "cantidad": {"$sum": 1}
+            }
+        }
+    ]))
+
+    cantidades = {
+        dato["_id"]: dato["cantidad"]
+        for dato in resultado
+    }
+
+    larga = cantidades.get("Larga estancia", 0)
+    temporada = cantidades.get("Temporada", 0)
+
+    if larga + temporada == 0:
+        print("No hay anuncios para el grafico 6.")
+        return
+
+    etiquetas = ["Larga estancia", "Temporada"]
+    valores = [larga, temporada]
+
+    plt.figure(figsize=(8, 6))
+
+    plt.pie(
+        valores,
+        labels=etiquetas,
+        autopct="%1.1f%%",
+        startangle=90
+    )
+
+    plt.title("Proporción de anuncios por tipo de contrato")
+    plt.tight_layout()
+
     ruta = os.path.join(
         CARPETA_GRAFICOS,
-        "grafico5_porcentaje_alquiler.png"
+        "grafico6_proporcion_contratos.png"
     )
 
     plt.savefig(ruta, dpi=300, bbox_inches="tight")
     plt.show()
     plt.close()
 
-    print("Grafico 5 guardado en:", ruta)
+    print("Grafico 6 guardado en:", ruta)
 
+
+def grafico_cantidad_pisos_contrato():
+
+    resultado = list(pisos.aggregate([
+        {
+            "$match": {
+                "TipoContrato": {
+                    "$in": ["Larga estancia", "Temporada"]
+                },
+                "Municipio": {"$ne": None}
+            }
+        },
+        {
+            "$group": {
+                "_id": {
+                    "municipio": "$Municipio",
+                    "contrato": "$TipoContrato"
+                },
+                "cantidad": {"$sum": 1}
+            }
+        },
+        {
+            "$sort": {
+                "_id.municipio": 1
+            }
+        }
+    ]))
+
+    if not resultado:
+        print("No hay datos suficientes para el grafico 7.")
+        return
+
+    datos = {}
+
+    for dato in resultado:
+
+        municipio = dato["_id"]["municipio"]
+        contrato = dato["_id"]["contrato"]
+
+        if municipio not in datos:
+            datos[municipio] = {
+                "Larga estancia": 0,
+                "Temporada": 0
+            }
+
+        datos[municipio][contrato] = dato["cantidad"]
+
+    municipios = sorted(datos.keys())
+
+    larga = [
+        datos[m]["Larga estancia"]
+        for m in municipios
+    ]
+
+    temporada = [
+        datos[m]["Temporada"]
+        for m in municipios
+    ]
+
+    posiciones = list(range(len(municipios)))
+    ancho = 0.35
+
+    plt.figure(figsize=(12, 6))
+
+    plt.bar(
+        [p - ancho / 2 for p in posiciones],
+        larga,
+        width=ancho,
+        label="Larga estancia"
+    )
+
+    plt.bar(
+        [p + ancho / 2 for p in posiciones],
+        temporada,
+        width=ancho,
+        label="Temporada"
+    )
+
+    plt.title("Cantidad de pisos por municipio y tipo de contrato")
+    plt.xlabel("Municipio")
+    plt.ylabel("Número de anuncios")
+
+    plt.xticks(posiciones, municipios, rotation=30, ha="right")
+
+    plt.legend()
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+
+    ruta = os.path.join(
+        CARPETA_GRAFICOS,
+        "grafico7_cantidad_pisos_contrato.png"
+    )
+
+    plt.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.show()
+    plt.close()
+
+    print("Grafico 7 guardado en:", ruta)
 
 
 if __name__ == "__main__":
@@ -473,15 +628,18 @@ if __name__ == "__main__":
 
         print("Generando graficos desde MongoDB...")
 
-        grafico_precio_medio()
+        grafico_proporcion_contratos()
+        grafico_cantidad_pisos_contrato()
 
-        grafico_distribucion_precios()
+        for contrato in ["Larga estancia", "Temporada"]:
 
-        grafico_superficie_precio()
+            print(f"\nGenerando graficos de {contrato}...")
 
-        grafico_ingresos_alquiler()
-
-        grafico_porcentaje_alquiler()
+            grafico_precio_medio(contrato)
+            grafico_distribucion_precios(contrato)
+            grafico_superficie_precio(contrato)
+            grafico_ingresos_alquiler(contrato)
+            grafico_porcentaje_alquiler(contrato)
 
         print("\nProceso de graficos finalizado.")
 
