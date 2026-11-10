@@ -18,6 +18,7 @@ def crear_indices():
 
     pisos.create_index(
         [("TipoContrato", ASCENDING)]
+        
     )
 
     pisos.create_index([
