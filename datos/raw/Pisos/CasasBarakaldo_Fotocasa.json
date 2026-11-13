@@ -1,17 +1,17 @@
 [
     {
-        "Id": 191302544,
-        "Titulo": "Piso en Leon Kalea, Arteagabeitia - Retuerto - Kareaga",
+        "Id": 189838355,
+        "Titulo": "Piso en Errekatxu Kalea, Bagatza - San Vicente",
         "Barrio": null,
-        "Distrito": "Arteagabeitia - Retuerto - Kareaga",
-        "Precio": 1200,
+        "Distrito": "Bagatza - San Vicente",
+        "Precio": 1500,
         "TipoContrato": "Temporada",
         "Habitaciones": 3,
-        "Banos": 1,
-        "Metros": 70,
+        "Banos": 2,
+        "Metros": 90,
         "Planta": "1ª Planta",
-        "PrecioM2": 17.14,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-terraza-ascensor-amueblado/191302544/d"
+        "PrecioM2": 16.67,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-parking-ascensor-amueblado/189838355/d"
     },
     {
         "Id": 191280949,
@@ -40,6 +40,20 @@
         "Planta": "4ª Planta",
         "PrecioM2": 14.17,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-amueblado/191108942/d"
+    },
+    {
+        "Id": 191337545,
+        "Titulo": "Piso en Merindad de Uribe Kalea, Centro",
+        "Barrio": null,
+        "Distrito": "Centro",
+        "Precio": 1190,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 65,
+        "Planta": "1ª Planta",
+        "PrecioM2": 18.31,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-ascensor-amueblado-television/191337545/d"
     },
     {
         "Id": 188951639,

@@ -76,7 +76,7 @@ def obtener_municipio(nombre):
         raise ValueError(f"Nombre no válido: {nombre}")
     return resultado.group(1).strip()
 
-def limpiar_piso(piso, municipio):
+def limpiar_piso(piso, municipio, fuente):
 
     limpio = {
         "Id": limpiar_texto(piso.get("Id")),
@@ -91,7 +91,8 @@ def limpiar_piso(piso, municipio):
         "Planta": numero(piso.get("Planta")),
         "Precio": numero(piso.get("Precio")),
         "PrecioM2": numero(piso.get("PrecioM2")),
-        "Municipio": municipio
+        "Municipio": municipio,
+        "Fuentes": [fuente]
     }
     limpio["PrecioOriginal"] = limpiar_texto(piso.get("Precio"))
 
@@ -119,24 +120,32 @@ def cargar_archivos():
 
     pisos = {}
     archivos = sorted(CARPETA_DATOS.glob("*.json"))
+
     print(f"Carpeta: {CARPETA_DATOS}")
     print(f"Archivos encontrados: {len(archivos)}")
+
     if not archivos:
         raise FileNotFoundError(
             f"No hay archivos JSON en {CARPETA_DATOS}"
         )
-    leidos = 0
+
     for archivo in archivos:
         municipio = obtener_municipio(archivo.stem)
+        fuente = archivo.stem.rsplit("_", 1)[1]
+
         with open(archivo, "r", encoding="utf-8") as f:
             datos = json.load(f)
 
         for piso_original in datos:
-            piso = limpiar_piso(piso_original, municipio)
-            leidos += 1
-            pisos[piso["Hash"]] = pisos.get(
-                piso["Hash"], piso
-            )
+            piso = limpiar_piso(piso_original, municipio, fuente)
+            hash_piso = piso["Hash"]
+
+            if hash_piso not in pisos:
+                pisos[hash_piso] = piso
+            else:
+                for fuente in piso["Fuentes"]:
+                    if fuente not in pisos[hash_piso]["Fuentes"]:
+                        pisos[hash_piso]["Fuentes"].append(fuente)
 
     return list(pisos.values())
 
@@ -144,22 +153,38 @@ def guardar_mongodb(pisos):
 
     if not pisos:
         return
-    
+
     with MongoClient(MONGO_URI) as cliente:
         coleccion = cliente[DB_NAME][COLECCION]
         coleccion.create_index("Hash", unique=True)
-        operaciones = [
-            UpdateOne(
-                {"Hash": piso["Hash"]},
-                {"$setOnInsert": piso},
-                upsert=True
+
+        operaciones = []
+
+        for piso in pisos:
+            datos = piso.copy()
+            fuentes = datos.pop("Fuentes")
+
+            operaciones.append(
+                UpdateOne(
+                    {"Hash": piso["Hash"]},
+                    {
+                        "$set": datos,
+                        "$addToSet": {
+                            "Fuentes": {"$each": fuentes}
+                        }
+                    },
+                    upsert=True
+                )
             )
-            for piso in pisos]
-        
+
         resultado = coleccion.bulk_write(
             operaciones,
             ordered=False
         )
+
+        print("Pisos insertados:", resultado.upserted_count)
+        print("Pisos modificados:", resultado.modified_count)
+        print("Pisos coincidentes:", resultado.matched_count)
 
 def main():
     pisos = cargar_archivos()

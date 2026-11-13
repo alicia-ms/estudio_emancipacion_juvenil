@@ -1,19 +1,5 @@
 [
     {
-        "Id": "31922af6-1389-496b-9565-f6148d2acc86",
-        "Titulo": "Piso en Larrea - San Juan de Dios - Peñota",
-        "Barrio": null,
-        "Distrito": "Santurtzi",
-        "Precio": 1250,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 1,
-        "Metros": 78,
-        "Planta": "1ª Planta",
-        "PrecioM2": 16.03,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/larrea-san-juan-de-dios-penota/santurtzi/31922af6-1389-496b-9565-f6148d2acc86/d"
-    },
-    {
         "Id": "69deac7c-3e87-4321-92ea-d6413b995549",
         "Titulo": "Piso en Mahastiak Kalea",
         "Barrio": null,
@@ -28,8 +14,22 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/mahastiak-kalea/zona-centro/santurtzi/69deac7c-3e87-4321-92ea-d6413b995549/d"
     },
     {
+        "Id": "0661e3bd-6b7f-4ef3-bc02-497b410723fc",
+        "Titulo": "Piso en Antonio Alzaga Etorbidea 14",
+        "Barrio": null,
+        "Distrito": "Larrea - San Juan de Dios - Peñota",
+        "Precio": 1550,
+        "TipoContrato": null,
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": null,
+        "PrecioM2": 19.38,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/antonio-alzaga-etorbidea-14/larrea-san-juan-de-dios-penota/santurtzi/0661e3bd-6b7f-4ef3-bc02-497b410723fc/d"
+    },
+    {
         "Id": "857b0f9b-3645-4b95-82a9-540e9aecaa44",
-        "Titulo": "Piso en antonioo alzaga 14",
+        "Titulo": "Piso en Antonioo Alzaga 14",
         "Barrio": null,
         "Distrito": "Larrea - San Juan de Dios - Peñota",
         "Precio": 1550,

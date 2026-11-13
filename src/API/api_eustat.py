@@ -22,6 +22,7 @@ def rentaMedia ():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
+        os.makedirs("datos/raw/API", exist_ok=True)
         directorio_destino = "datos/raw/Api" 
         nombre_archivo = "mediaRenta.json"
         ruta_completa = os.path.join(directorio_destino, nombre_archivo)
@@ -74,6 +75,7 @@ def poblacionActivaPorMunicipio():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
+        os.makedirs("datos/raw/API", exist_ok=True)
         directorio_destino = "datos/raw/Api" 
         nombre_archivo = "activosMunicipio.json"
         ruta_completa = os.path.join(directorio_destino, nombre_archivo)
@@ -124,6 +126,7 @@ def asalariadosTipoContrato():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
+        os.makedirs("datos/raw/API", exist_ok=True)
         directorio_destino = "datos/raw/Api" 
         nombre_archivo = "asalariadosTipoContrato.json"
         ruta_completa = os.path.join(directorio_destino, nombre_archivo)
@@ -192,6 +195,7 @@ def poblacionEuskadi():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
+        os.makedirs("datos/raw/API", exist_ok=True)
         directorio_destino = "datos/raw/Api" 
         nombre_archivo = "poblacionEuskadi.json"
         ruta_completa = os.path.join(directorio_destino, nombre_archivo)
@@ -230,7 +234,8 @@ def viviendasEuskadi():
         print("¡Éxito total! Datos obtenidos de la API de Eustat:")
         datos = r.json()
         print(datos)
-        directorio_destino = "../../datos/raw/Api" 
+        os.makedirs("datos/raw/API", exist_ok=True)
+        directorio_destino = "datos/raw/Api"
         nombre_archivo = "viviendasEuskadi.json"
         ruta_completa = os.path.join(directorio_destino, nombre_archivo)
         with open(ruta_completa, "w", encoding="utf-8") as file_json:

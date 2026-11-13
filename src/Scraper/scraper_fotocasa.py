@@ -9,7 +9,7 @@ import unicodedata
 from playwright.sync_api import sync_playwright
 
 BASE = "https://www.fotocasa.es"
-MIN_ANUNCIOS = 5
+MIN_ANUNCIOS = 3
 
 SUBTIPOS = {
     "Flat": "Piso",
@@ -150,15 +150,15 @@ def cargar_datos(url_zona, nombre):
         print(f"{nombre}: solo {len(viviendas)} anuncios (mínimo {MIN_ANUNCIOS}). No se guarda.")
         return
 
-    os.makedirs("../../datos/raw/Pisos", exist_ok=True)
-    with open(f"../../datos/raw/Pisos/{nombre}.json", "w", encoding="utf-8") as f:
+    os.makedirs("datos/raw/Pisos", exist_ok=True)
+    with open(f"datos/raw/Pisos/{nombre}.json", "w", encoding="utf-8") as f:
         json.dump(viviendas, f, indent=4, ensure_ascii=False)
-    print(f"Guardado ../../datos/raw/Pisos/{nombre}.json ({len(viviendas)} anuncios)")
+    print(f"Guardado datos/raw/Pisos/{nombre}.json ({len(viviendas)} anuncios)")
 
 
 def extraer_municipios():
     df = pd.read_csv(
-    "../../datos/raw/mediaPoblacionEmpleo.csv",
+    "datos/raw/mediaPoblacionEmpleo.csv",
     skiprows=2,
     encoding="latin1"
     )

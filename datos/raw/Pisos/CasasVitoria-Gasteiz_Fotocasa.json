@@ -14,20 +14,6 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/vitoria-gasteiz/calefaccion-ascensor-amueblado/191293674/d"
     },
     {
-        "Id": 191124106,
-        "Titulo": "Dúplex en Zapatari Kalea, Casco Viejo",
-        "Barrio": null,
-        "Distrito": "Casco Viejo",
-        "Precio": 1125,
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 2,
-        "Banos": 2,
-        "Metros": 70,
-        "Planta": "3ª Planta",
-        "PrecioM2": 16.07,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/vitoria-gasteiz/ascensor/191124106/d"
-    },
-    {
         "Id": 190435311,
         "Titulo": "Piso en Errege Atea, 21, Casco Viejo",
         "Barrio": null,
@@ -68,20 +54,6 @@
         "Planta": "1ª Planta",
         "PrecioM2": 21.77,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/vitoria-gasteiz/no-amueblado/189132896/d"
-    },
-    {
-        "Id": 190225200,
-        "Titulo": "Piso en Iturritxu Kalea, San Cristóbal",
-        "Barrio": null,
-        "Distrito": "San Cristóbal",
-        "Precio": 1135,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 98,
-        "Planta": "21",
-        "PrecioM2": 11.58,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/vitoria-gasteiz/terraza-ascensor/190225200/d"
     },
     {
         "Id": 131393829,

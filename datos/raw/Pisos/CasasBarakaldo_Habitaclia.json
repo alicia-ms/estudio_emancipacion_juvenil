@@ -1,31 +1,31 @@
 [
     {
-        "Id": "61953cb2-8584-4626-9919-6ec0ca7a3352",
-        "Titulo": "Bajo en Turina Kalea 4",
+        "Id": "b24fca60-a732-42d6-b7ed-0ed88fcfb68e",
+        "Titulo": "Piso en Errekatxu Kalea",
         "Barrio": null,
-        "Distrito": "Lutxana - Llano",
+        "Distrito": "Bagatza - San Vicente",
         "Precio": 1500,
+        "TipoContrato": null,
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 90,
+        "Planta": "1ª Planta",
+        "PrecioM2": 16.67,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/errekatxu-kalea/bagatza-san-vicente/barakaldo/b24fca60-a732-42d6-b7ed-0ed88fcfb68e/d"
+    },
+    {
+        "Id": "ad7c9084-195f-4cb6-8ea2-5c0ac376a94d",
+        "Titulo": "Piso en Merindad de Uribe Kalea",
+        "Barrio": null,
+        "Distrito": "Centro",
+        "Precio": 1190,
         "TipoContrato": null,
         "Habitaciones": 2,
         "Banos": 1,
-        "Metros": 57,
-        "Planta": "Bajos",
-        "PrecioM2": 26.32,
-        "Url": "https://www.habitaclia.com/alquiler/bajo/turina-kalea-4/lutxana-llano/barakaldo/61953cb2-8584-4626-9919-6ec0ca7a3352/d"
-    },
-    {
-        "Id": "c4219a48-a13c-458d-a260-68e2a3f0f556",
-        "Titulo": "Apartamento en Cirilo Sagastagoitia Ibilbidea",
-        "Barrio": null,
-        "Distrito": "Lutxana - Llano",
-        "Precio": 1500,
-        "TipoContrato": null,
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 45,
-        "Planta": "Bajos",
-        "PrecioM2": 33.33,
-        "Url": "https://www.habitaclia.com/alquiler/apartamento/cirilo-sagastagoitia-ibilbidea/lutxana-llano/barakaldo/c4219a48-a13c-458d-a260-68e2a3f0f556/d"
+        "Metros": 65,
+        "Planta": "1ª Planta",
+        "PrecioM2": 18.31,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/merindad-de-uribe-kalea/centro/barakaldo/ad7c9084-195f-4cb6-8ea2-5c0ac376a94d/d"
     },
     {
         "Id": "49eaafb8-a124-4bc5-bec3-9bdc5066b8f3",
@@ -40,20 +40,6 @@
         "Planta": "7ª Planta",
         "PrecioM2": 24.0,
         "Url": "https://www.habitaclia.com/alquiler/apartamento/horacio-etxebarrieta-kalea/cruces/barakaldo/49eaafb8-a124-4bc5-bec3-9bdc5066b8f3/d"
-    },
-    {
-        "Id": "26c3947e-7943-432e-b405-b699c11eb834",
-        "Titulo": "Piso en Leon Kalea",
-        "Barrio": null,
-        "Distrito": "Arteagabeitia - Retuerto - Kareaga",
-        "Precio": 1200,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 1,
-        "Metros": 70,
-        "Planta": "1ª Planta",
-        "PrecioM2": 17.14,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/leon-kalea/arteagabeitia-retuerto-kareaga/barakaldo/26c3947e-7943-432e-b405-b699c11eb834/d"
     },
     {
         "Id": "73e8bb33-2826-48f1-b69c-c0f9dcf8fee9",

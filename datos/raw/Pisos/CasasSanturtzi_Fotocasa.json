@@ -1,31 +1,45 @@
 [
     {
-        "Id": 191047741,
+        "Id": 191305970,
         "Titulo": "Piso en Mahastiak Kalea, Zona Centro",
         "Barrio": null,
         "Distrito": "Zona Centro",
-        "Precio": 1200,
+        "Precio": 1100,
         "TipoContrato": "Temporada",
         "Habitaciones": 2,
         "Banos": 1,
         "Metros": 56,
         "Planta": "1ª Planta",
-        "PrecioM2": 21.43,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/calefaccion-amueblado/191047741/d"
+        "PrecioM2": 19.64,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/calefaccion-amueblado/191305970/d"
     },
     {
-        "Id": 191094148,
-        "Titulo": "Piso en Larrea - San Juan de Dios - Peñota",
+        "Id": 187428596,
+        "Titulo": "Piso en Antonio Alzaga Etorbidea, 14, Larrea - San Juan de Dios - Peñota",
         "Barrio": null,
         "Distrito": "Larrea - San Juan de Dios - Peñota",
-        "Precio": 1250,
+        "Precio": 1550,
         "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": null,
+        "PrecioM2": 19.38,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/aire-acondicionado-calefaccion-parking-terraza-ascensor-amueblado-television-internet/187428596/d"
+    },
+    {
+        "Id": 191349015,
+        "Titulo": "Piso en Mamariga",
+        "Barrio": null,
+        "Distrito": "Mamariga",
+        "Precio": 1500,
+        "TipoContrato": "Larga estancia",
         "Habitaciones": 3,
         "Banos": 1,
-        "Metros": 78,
-        "Planta": "1ª Planta",
-        "PrecioM2": 16.03,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/calefaccion-terraza-amueblado/191094148/d"
+        "Metros": 95,
+        "Planta": "5ª Planta",
+        "PrecioM2": 15.79,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/terraza-ascensor/191349015/d"
     },
     {
         "Id": 189981191,

@@ -60,9 +60,9 @@ resultado = pisos.find({
 for piso in resultado:
     print(piso)
 
-#Pisos con 2 hab y precio por debajo de 900€
+#Pisos con 2 o más habitaciones y precio por debajo de 900€
 resultado = pisos.find({
-    "Habitaciones": {"$gt": 2},
+    "Habitaciones": {"$gte": 2},
     "Precio": {"$lt": 900}
 })
 
@@ -189,5 +189,20 @@ resultado = poblacion.find({
 })
 
 for poblacion in resultado:
-    print(activos)
+    print(poblacion)
 
+# Mostrar pisos encontrados en Fotocasa
+resultado = pisos.find({
+    "Fuentes": "Fotocasa"
+})
+
+for piso in resultado:
+    print(piso)
+
+# Mostrar pisos encontrados en varias webs
+resultado = pisos.find({
+    "Fuentes.1": {"$exists": True}
+})
+
+for piso in resultado:
+    print(piso)

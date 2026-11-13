@@ -1,21 +1,7 @@
 [
     {
-        "Id": "6906b917-22d5-4f30-9054-6fa95a34a76f",
-        "Titulo": "Piso en Iturritxu Kalea",
-        "Barrio": null,
-        "Distrito": "San Cristóbal",
-        "Precio": 1135,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 98,
-        "Planta": "Mayor que 10",
-        "PrecioM2": 11.58,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/iturritxu-kalea/san-cristobal/vitoria-gasteiz/6906b917-22d5-4f30-9054-6fa95a34a76f/d"
-    },
-    {
         "Id": "051d6c9e-2239-47dd-9548-9d1ac4b707ba",
-        "Titulo": "Piso en TARRAGONA",
+        "Titulo": "Piso en Tarragona",
         "Barrio": null,
         "Distrito": "Lakua-Bizkarra",
         "Precio": 1057,
@@ -26,34 +12,6 @@
         "Planta": "4ª Planta",
         "PrecioM2": 11.74,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/tarragona/lakua-bizkarra/vitoria-gasteiz/051d6c9e-2239-47dd-9548-9d1ac4b707ba/d"
-    },
-    {
-        "Id": "dfd67f90-77f2-456e-b9ad-7a04c89bb737",
-        "Titulo": "Piso en Amárica",
-        "Barrio": null,
-        "Distrito": "Ensanche",
-        "Precio": 818,
-        "TipoContrato": null,
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 45,
-        "Planta": null,
-        "PrecioM2": 18.18,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/amarica/ensanche/vitoria-gasteiz/dfd67f90-77f2-456e-b9ad-7a04c89bb737/d"
-    },
-    {
-        "Id": "c0eccd50-e09a-464e-8370-e0e27db4c261",
-        "Titulo": "Dúplex en Zapatari Kalea",
-        "Barrio": null,
-        "Distrito": "Casco Viejo",
-        "Precio": 1125,
-        "TipoContrato": null,
-        "Habitaciones": 2,
-        "Banos": 2,
-        "Metros": 70,
-        "Planta": "3ª Planta",
-        "PrecioM2": 16.07,
-        "Url": "https://www.habitaclia.com/alquiler/duplex/zapatari-kalea/casco-viejo/vitoria-gasteiz/c0eccd50-e09a-464e-8370-e0e27db4c261/d"
     },
     {
         "Id": "65491b0a-a203-49fc-a138-6269763cd399",
@@ -85,7 +43,7 @@
     },
     {
         "Id": "cf480ee1-56fd-45b8-bd49-1c21a38bc907",
-        "Titulo": "Piso en JOSE ATXOTEGI",
+        "Titulo": "Piso en Jose Atxotegi",
         "Barrio": null,
         "Distrito": "Gazalbide",
         "Precio": 1400,
@@ -98,8 +56,22 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/jose-atxotegi/gazalbide/vitoria-gasteiz/cf480ee1-56fd-45b8-bd49-1c21a38bc907/d"
     },
     {
+        "Id": "dfd67f90-77f2-456e-b9ad-7a04c89bb737",
+        "Titulo": "Piso en Amárica",
+        "Barrio": null,
+        "Distrito": "Ensanche",
+        "Precio": 818,
+        "TipoContrato": null,
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 45,
+        "Planta": null,
+        "PrecioM2": 18.18,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/amarica/ensanche/vitoria-gasteiz/dfd67f90-77f2-456e-b9ad-7a04c89bb737/d"
+    },
+    {
         "Id": "b7a5c8ff-d712-4ff7-847e-d11e2b9ae5dc",
-        "Titulo": "Piso en PASEO DE LA ZUMAQUERA",
+        "Titulo": "Piso en Paseo de la Zumaquera",
         "Barrio": null,
         "Distrito": "San Cristóbal",
         "Precio": 1080,
