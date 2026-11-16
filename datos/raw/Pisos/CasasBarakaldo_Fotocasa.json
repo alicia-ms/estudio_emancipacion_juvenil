@@ -84,6 +84,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/calefaccion-ascensor-amueblado/188951617/d"
     },
     {
+        "Id": 191405025,
+        "Titulo": "Piso en Zumalakarregi Kalea, 41, Burtzeña",
+        "Barrio": null,
+        "Distrito": "Burtzeña",
+        "Precio": 680,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 40,
+        "Planta": null,
+        "PrecioM2": 17.0,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/barakaldo/burtzena/191405025/d"
+    },
+    {
         "Id": 189749422,
         "Titulo": "Piso en Economía Kalea, 19, Arteagabeitia - Retuerto - Kareaga",
         "Barrio": null,

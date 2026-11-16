@@ -3,9 +3,9 @@ from hdfs import InsecureClient
 import json
 
 TOPIC = "datos_vivienda"
-RAW = "/user/iabd-user10/reto_vivienda/raw"
+RAW = "/user/iabd-user9/reto_vivienda/raw"
 
-client = InsecureClient("http://10.22.87.215:50070", user="iabd-user10")
+client = InsecureClient("http://10.22.87.215:50070", user="iabd-user9")
 
 consumer = Consumer({
     "bootstrap.servers": "10.22.87.215:9092",

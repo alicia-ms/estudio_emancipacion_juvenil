@@ -140,10 +140,17 @@ def cargar_datos(urlZona, nombre):
     print(f"Guardado datos/raw/Pisos/{nombre}.json ({len(viviendas)} anuncios)")
     
 
-if __name__ == "__main__":
+if __name__ == "__main__":      
+            
     municipios = extraer_municipios()
+
     for municipio in municipios:
-        url_zona = f"https://www.pisos.com/alquiler/{municipio.lower().replace(' ', '-')}/"
+
+        if "Donostia" in municipio:
+            municipio = "San Sebastian Donostia"
+            url_zona = f"https://www.pisos.com/alquiler/pisos-{municipio.lower().replace(' ', '_')}/"
+        else:
+            url_zona = f"https://www.pisos.com/alquiler/pisos-{municipio.lower().replace(' ', '_')}/"
 
         nombre_municipio = unicodedata.normalize("NFKD", municipio)
         nombre_municipio = "".join(
@@ -154,5 +161,4 @@ if __name__ == "__main__":
         nombre_municipio = nombre_municipio.replace(" ", "")
 
         nombre = f"Casas{nombre_municipio}_PisosCom"
-
         cargar_datos(url_zona, nombre)

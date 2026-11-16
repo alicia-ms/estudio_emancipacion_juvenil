@@ -26,9 +26,8 @@ def convertir_precio(precio):
     return float(texto)
 
 
-# Buscar los anuncios de Donos
 anuncios = pisos.find({
-    "Municipio": "Donos",
+    "Municipio": "Donostia",
     "PrecioOriginal": {"$type": "string"}
 })
 
@@ -38,7 +37,6 @@ for anuncio in anuncios:
     precio_original = anuncio["PrecioOriginal"]
     precio_nuevo = convertir_precio(precio_original)
 
-    # Actualizar solamente si tenemos un precio válido
     if precio_nuevo is not None:
         pisos.update_one(
             {"_id": anuncio["_id"]},

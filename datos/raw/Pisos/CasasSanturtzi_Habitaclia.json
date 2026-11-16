@@ -1,19 +1,5 @@
 [
     {
-        "Id": "69deac7c-3e87-4321-92ea-d6413b995549",
-        "Titulo": "Piso en Mahastiak Kalea",
-        "Barrio": null,
-        "Distrito": "Zona Centro",
-        "Precio": 1100,
-        "TipoContrato": null,
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 56,
-        "Planta": "1ª Planta",
-        "PrecioM2": 19.64,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/mahastiak-kalea/zona-centro/santurtzi/69deac7c-3e87-4321-92ea-d6413b995549/d"
-    },
-    {
         "Id": "0661e3bd-6b7f-4ef3-bc02-497b410723fc",
         "Titulo": "Piso en Antonio Alzaga Etorbidea 14",
         "Barrio": null,

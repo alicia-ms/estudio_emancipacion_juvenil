@@ -1,19 +1,5 @@
 [
     {
-        "Id": 191305970,
-        "Titulo": "Piso en Mahastiak Kalea, Zona Centro",
-        "Barrio": null,
-        "Distrito": "Zona Centro",
-        "Precio": 1100,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 56,
-        "Planta": "1ª Planta",
-        "PrecioM2": 19.64,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/santurtzi/calefaccion-amueblado/191305970/d"
-    },
-    {
         "Id": 187428596,
         "Titulo": "Piso en Antonio Alzaga Etorbidea, 14, Larrea - San Juan de Dios - Peñota",
         "Barrio": null,

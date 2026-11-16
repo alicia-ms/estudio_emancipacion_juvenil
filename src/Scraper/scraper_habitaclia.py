@@ -189,8 +189,13 @@ def extraer_municipios():
 if __name__ == "__main__":
     municipios = extraer_municipios()
     for municipio in municipios:
-        url_zona = f"{BASE}/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/s"
-
+        
+        if "Donostia" in municipio:
+            municipio = "Donostia San Sebastian"
+            url_zona = f"{BASE}/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/s"
+        else:
+            url_zona = f"{BASE}/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/s"
+        
         nombre_municipio = unicodedata.normalize("NFKD", municipio)
         nombre_municipio = "".join(c for c in nombre_municipio if not unicodedata.combining(c))
         nombre_municipio = re.sub(r'[<>:"/\\|?*]', "_", nombre_municipio).replace(" ", "")

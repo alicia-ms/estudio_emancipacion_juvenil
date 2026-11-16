@@ -132,6 +132,11 @@ def cargar_archivos():
     for archivo in archivos:
         municipio = obtener_municipio(archivo.stem)
         fuente = archivo.stem.rsplit("_", 1)[1]
+        
+        municipio_normalizado = municipio.lower().replace("_", "").replace("-", "").replace(" ", "")
+
+        if municipio_normalizado in ["donos", "donostiasansebastian", "sansebastiandonostia"]:
+            municipio = "Donostia"
 
         with open(archivo, "r", encoding="utf-8") as f:
             datos = json.load(f)
@@ -143,9 +148,9 @@ def cargar_archivos():
             if hash_piso not in pisos:
                 pisos[hash_piso] = piso
             else:
-                for fuente in piso["Fuentes"]:
-                    if fuente not in pisos[hash_piso]["Fuentes"]:
-                        pisos[hash_piso]["Fuentes"].append(fuente)
+                for fuente_existente in piso["Fuentes"]:
+                    if fuente_existente not in pisos[hash_piso]["Fuentes"]:
+                        pisos[hash_piso]["Fuentes"].append(fuente_existente)
 
     return list(pisos.values())
 

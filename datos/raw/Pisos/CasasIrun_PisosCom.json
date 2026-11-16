@@ -1,0 +1,58 @@
+[
+    {
+        "Id": "68364760133.109800",
+        "Titulo": "Apartamento en calle Iglesia, 10",
+        "Barrio": "Erdialdea-Alde Zaharra-Mendibil-Santiago",
+        "Distrito": "",
+        "Precio": "1.000 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 80,
+        "Planta": 2,
+        "PrecioM2": 12.5,
+        "Url": "https://www.pisos.com/alquilar/apartamento-erdialdea_alde_zaharra_mendibil_santiago20302-68364760133_109800/"
+    },
+    {
+        "Id": "69254037222.106100",
+        "Titulo": "Piso en Hondarribia",
+        "Barrio": "Hondarribia",
+        "Distrito": "",
+        "Precio": "1.100 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 90,
+        "Planta": 2,
+        "PrecioM2": 12.22,
+        "Url": "https://www.pisos.com/alquilar/piso-hondarribia_centro_urbano-69254037222_106100/"
+    },
+    {
+        "Id": "66745422272.108500",
+        "Titulo": "Apartamento en Camping Oliden",
+        "Barrio": "Camping Oliden",
+        "Distrito": "",
+        "Precio": "1.000 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 1,
+        "Banos": null,
+        "Metros": null,
+        "Planta": null,
+        "PrecioM2": null,
+        "Url": "https://www.pisos.com/alquilar/apartamento-camping_oliden-66745422272_108500/"
+    },
+    {
+        "Id": "945856910033093.109800",
+        "Titulo": "Chalet unifamiliar en Ulia Pasealekua, 123",
+        "Barrio": "Ategorrieta-Ulia",
+        "Distrito": "",
+        "Precio": "8.500 €/mes",
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 10,
+        "Banos": 10,
+        "Metros": 910,
+        "Planta": null,
+        "PrecioM2": 9.34,
+        "Url": "https://www.pisos.com/alquilar/chalet_unifamiliar-san_sebastian_donostia_ategorrieta_ulia20013-945856910033093_109800/"
+    }
+]

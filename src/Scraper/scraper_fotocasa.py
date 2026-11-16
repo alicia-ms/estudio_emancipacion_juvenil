@@ -168,7 +168,13 @@ def extraer_municipios():
 if __name__ == "__main__":
     municipios = extraer_municipios()
     for municipio in municipios:
-        url_zona = f"https://www.fotocasa.es/es/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/todas-las-zonas/l"
+
+        if "Donostia" in municipio:
+            municipio = "Donostia San Sebastian"
+            url_zona = f"https://www.fotocasa.es/es/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/todas-las-zonas/l"
+        else:
+            url_zona = f"https://www.fotocasa.es/es/alquiler/viviendas/{municipio.lower().replace(' ', '-')}/todas-las-zonas/l"
+        
 
         nombre_municipio = unicodedata.normalize("NFKD", municipio)
         nombre_municipio = "".join(

@@ -70,6 +70,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/ascensor-amueblado/191348077/d"
     },
     {
+        "Id": 191246624,
+        "Titulo": "Piso en Goya Zeharkalea, Rekalde Centro",
+        "Barrio": "Rekalde Centro",
+        "Distrito": "Errekalde",
+        "Precio": 1050,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 70,
+        "Planta": "5ª Planta",
+        "PrecioM2": 15.0,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/191246624/d"
+    },
+    {
         "Id": 188268293,
         "Titulo": "Piso en Don Diego López Haroko Kale Nagusia., Ensanche - Moyua - Diputación",
         "Barrio": "Ensanche - Moyua - Diputación",
@@ -222,20 +236,6 @@
         "Planta": "2ª Planta",
         "PrecioM2": 15.26,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/185613133/d"
-    },
-    {
-        "Id": 191246624,
-        "Titulo": "Piso en Goya Zeharkalea, Rekalde Centro",
-        "Barrio": "Rekalde Centro",
-        "Distrito": "Errekalde",
-        "Precio": 1050,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 70,
-        "Planta": "5ª Planta",
-        "PrecioM2": 15.0,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/191246624/d"
     },
     {
         "Id": 191180548,
@@ -434,18 +434,18 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-terraza-ascensor-amueblado/188491647/d"
     },
     {
-        "Id": 188707927,
-        "Titulo": "Piso en Alameda de Urquijo, Alhóndiga",
+        "Id": 191357517,
+        "Titulo": "Piso en Calle Calle General Concha, Alhóndiga",
         "Barrio": "Alhóndiga",
         "Distrito": "Indautxu",
         "Precio": 1400,
         "TipoContrato": "Temporada",
-        "Habitaciones": 1,
+        "Habitaciones": 2,
         "Banos": 1,
-        "Metros": 55,
-        "Planta": "4ª Planta",
-        "PrecioM2": 25.45,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/188707927/d"
+        "Metros": 67,
+        "Planta": "5ª Planta",
+        "PrecioM2": 20.9,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/191357517/d"
     },
     {
         "Id": 188475840,
@@ -868,18 +868,18 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/190342177/d"
     },
     {
-        "Id": 189599178,
-        "Titulo": "Piso en Calle Calle General Concha, Alhóndiga",
-        "Barrio": "Alhóndiga",
+        "Id": 182447233,
+        "Titulo": "Piso en Calle ERCILLA, Zona Indautxu",
+        "Barrio": "Zona Indautxu",
         "Distrito": "Indautxu",
-        "Precio": 1400,
+        "Precio": 2500,
         "TipoContrato": "Temporada",
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 67,
-        "Planta": "3ª Planta",
-        "PrecioM2": 20.9,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/189599178/d"
+        "Habitaciones": 4,
+        "Banos": 2,
+        "Metros": 185,
+        "Planta": "2ª Planta",
+        "PrecioM2": 13.51,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/182447233/d"
     },
     {
         "Id": 191248646,
@@ -1176,6 +1176,34 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/191357391/d"
     },
     {
+        "Id": 189599178,
+        "Titulo": "Piso en Calle Calle General Concha, Alhóndiga",
+        "Barrio": "Alhóndiga",
+        "Distrito": "Indautxu",
+        "Precio": 1400,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 67,
+        "Planta": "3ª Planta",
+        "PrecioM2": 20.9,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/189599178/d"
+    },
+    {
+        "Id": 188707927,
+        "Titulo": "Piso en Alameda de Urquijo, Alhóndiga",
+        "Barrio": "Alhóndiga",
+        "Distrito": "Indautxu",
+        "Precio": 1400,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 55,
+        "Planta": "4ª Planta",
+        "PrecioM2": 25.45,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/188707927/d"
+    },
+    {
         "Id": 183248733,
         "Titulo": "Piso en Gran Vía Don Diego López de Haro, Abandoibarra - Guggenheim",
         "Barrio": "Abandoibarra - Guggenheim",
@@ -1260,6 +1288,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-parking-terraza-amueblado/186963710/d"
     },
     {
+        "Id": 185418742,
+        "Titulo": "Piso en Calle General Concha, Alhóndiga",
+        "Barrio": "Alhóndiga",
+        "Distrito": "Indautxu",
+        "Precio": 1400,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 57,
+        "Planta": "3ª Planta",
+        "PrecioM2": 24.56,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/185418742/d"
+    },
+    {
         "Id": 185663794,
         "Titulo": "Piso en Hernani Kalea, San Francisco",
         "Barrio": "San Francisco",
@@ -1316,34 +1358,6 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/aire-acondicionado-calefaccion-parking-trastero-ascensor-amueblado/184666898/d"
     },
     {
-        "Id": 185418742,
-        "Titulo": "Piso en Calle General Concha, Alhóndiga",
-        "Barrio": "Alhóndiga",
-        "Distrito": "Indautxu",
-        "Precio": 1400,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 57,
-        "Planta": "3ª Planta",
-        "PrecioM2": 24.56,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/185418742/d"
-    },
-    {
-        "Id": 182447233,
-        "Titulo": "Piso en Calle ERCILLA, Zona Indautxu",
-        "Barrio": "Zona Indautxu",
-        "Distrito": "Indautxu",
-        "Precio": 2500,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 4,
-        "Banos": 2,
-        "Metros": 185,
-        "Planta": "2ª Planta",
-        "PrecioM2": 13.51,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/182447233/d"
-    },
-    {
         "Id": 191232657,
         "Titulo": "Piso en Basurtu Kastrexana Errepidea, Altamira",
         "Barrio": "Altamira",
@@ -1370,20 +1384,6 @@
         "Planta": "21",
         "PrecioM2": 22.73,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/aire-acondicionado-calefaccion-parking-ascensor-amueblado/190730361/d"
-    },
-    {
-        "Id": 191357517,
-        "Titulo": "Piso en Calle Calle General Concha, Alhóndiga",
-        "Barrio": "Alhóndiga",
-        "Distrito": "Indautxu",
-        "Precio": 1400,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 67,
-        "Planta": "5ª Planta",
-        "PrecioM2": 20.9,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/191357517/d"
     },
     {
         "Id": 191356260,
@@ -1722,6 +1722,20 @@
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/187539944/d"
     },
     {
+        "Id": 189626548,
+        "Titulo": "Piso en Iparraguirre Kalea, Ensanche - Moyua - Diputación",
+        "Barrio": "Ensanche - Moyua - Diputación",
+        "Distrito": "Abando - Albia",
+        "Precio": 2000,
+        "TipoContrato": "Temporada",
+        "Habitaciones": 3,
+        "Banos": 3,
+        "Metros": 120,
+        "Planta": "4ª Planta",
+        "PrecioM2": 16.67,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/189626548/d"
+    },
+    {
         "Id": 190224470,
         "Titulo": "Piso en Larrakoetxe Kalea, Otxarkoaga",
         "Barrio": "Otxarkoaga",
@@ -1748,20 +1762,6 @@
         "Planta": "2ª Planta",
         "PrecioM2": 15.0,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-amueblado/189096942/d"
-    },
-    {
-        "Id": 189626548,
-        "Titulo": "Piso en Iparraguirre Kalea, Ensanche - Moyua - Diputación",
-        "Barrio": "Ensanche - Moyua - Diputación",
-        "Distrito": "Abando - Albia",
-        "Precio": 2000,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 3,
-        "Banos": 3,
-        "Metros": 120,
-        "Planta": "4ª Planta",
-        "PrecioM2": 16.67,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/189626548/d"
     },
     {
         "Id": 190193743,
@@ -1944,20 +1944,6 @@
         "Planta": "Entresuelo",
         "PrecioM2": 15.23,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor-amueblado/191387747/d"
-    },
-    {
-        "Id": 191391283,
-        "Titulo": "Piso en Irala , Iralabarri",
-        "Barrio": "Iralabarri",
-        "Distrito": "Errekalde",
-        "Precio": 705,
-        "TipoContrato": "Larga estancia",
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 60,
-        "Planta": null,
-        "PrecioM2": 11.75,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/ascensor-amueblado/191391283/d"
     },
     {
         "Id": 191318505,
@@ -2154,20 +2140,6 @@
         "Planta": "7ª Planta",
         "PrecioM2": 11.47,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-terraza-ascensor-no-amueblado/187970586/d"
-    },
-    {
-        "Id": 190619789,
-        "Titulo": "Piso en Olabeaga",
-        "Barrio": "Olabeaga",
-        "Distrito": "Basurtu - Zorrotza",
-        "Precio": 1800,
-        "TipoContrato": "Temporada",
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 110,
-        "Planta": "Bajos",
-        "PrecioM2": 16.36,
-        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-parking-terraza-ascensor/190619789/d"
     },
     {
         "Id": 189732074,
@@ -2532,6 +2504,20 @@
         "Planta": "3ª Planta",
         "PrecioM2": 15.33,
         "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/calefaccion-ascensor/186170658/d"
+    },
+    {
+        "Id": 191396219,
+        "Titulo": "Piso en Matiko - Ciudad Jardín",
+        "Barrio": "Matiko - Ciudad Jardín",
+        "Distrito": "Uribarri",
+        "Precio": 1700,
+        "TipoContrato": "Larga estancia",
+        "Habitaciones": 4,
+        "Banos": 2,
+        "Metros": 101,
+        "Planta": "21",
+        "PrecioM2": 16.83,
+        "Url": "https://www.fotocasa.es/es/alquiler/vivienda/bilbao/terraza-ascensor/191396219/d"
     },
     {
         "Id": 190490819,

@@ -42,20 +42,6 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/basurtu-kastrexana-errepidea/basurtu-zorrotza/bilbao/74782334-b82d-472c-8f71-384c53dff7fa/d"
     },
     {
-        "Id": "e5556254-5e33-47ae-be69-caf155459e3d",
-        "Titulo": "Piso en Irala",
-        "Barrio": null,
-        "Distrito": "Errekalde",
-        "Precio": 705,
-        "TipoContrato": null,
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 60,
-        "Planta": null,
-        "PrecioM2": 11.75,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/irala/errekalde/bilbao/e5556254-5e33-47ae-be69-caf155459e3d/d"
-    },
-    {
         "Id": "ca894199-55ef-4d0a-b77c-ebd941e46cc6",
         "Titulo": "Piso en Francisco Durrio Eskultorearen Kalea",
         "Barrio": null,
@@ -154,20 +140,6 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/prim-kalea/ibaiondo/bilbao/f2609c78-cc33-4314-910b-6d2d798fdbe4/d"
     },
     {
-        "Id": "f792d74b-f285-40b8-aaff-15fee5c1f42f",
-        "Titulo": "Apartamento en Abando - Albia",
-        "Barrio": null,
-        "Distrito": "Bilbao",
-        "Precio": 3000,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 118,
-        "Planta": "1ª Planta",
-        "PrecioM2": 25.42,
-        "Url": "https://www.habitaclia.com/alquiler/apartamento/abando-albia/bilbao/f792d74b-f285-40b8-aaff-15fee5c1f42f/d"
-    },
-    {
         "Id": "1c81f11d-12c7-436e-a9b3-a130220c08a3",
         "Titulo": "Piso en Múgica y Butrón Kalea",
         "Barrio": null,
@@ -196,18 +168,18 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/lapurdi-hiribidea/errekalde/bilbao/7ec071e1-c233-4e9b-9380-15ddf18a69e7/d"
     },
     {
-        "Id": "884a7f1c-5288-4c75-aa63-218dd57a5a53",
-        "Titulo": "Piso en Basurto-Kastrexana Errepidea",
+        "Id": "660eea7d-2490-483e-9fd1-5c4a7da31c28",
+        "Titulo": "Piso en Iparraguirre Kalea",
         "Barrio": null,
-        "Distrito": "Basurtu - Zorrotza",
-        "Precio": 1900,
+        "Distrito": "Abando - Albia",
+        "Precio": 2000,
         "TipoContrato": null,
         "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 95,
-        "Planta": "1ª Planta",
-        "PrecioM2": 20.0,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/basurto-kastrexana-errepidea/basurtu-zorrotza/bilbao/884a7f1c-5288-4c75-aa63-218dd57a5a53/d"
+        "Banos": 3,
+        "Metros": 120,
+        "Planta": "4ª Planta",
+        "PrecioM2": 16.67,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/iparraguirre-kalea/abando-albia/bilbao/660eea7d-2490-483e-9fd1-5c4a7da31c28/d"
     },
     {
         "Id": "e46a5bd3-d9c0-47da-bea4-d6379c5f7a34",
@@ -294,6 +266,20 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/paseo-uribitarte/abando-albia/bilbao/b7dbea2c-c92c-4266-b32e-dd21dd05c119/d"
     },
     {
+        "Id": "0e9266f4-282c-409c-b3cb-92427bc2fc51",
+        "Titulo": "Piso en Goya Zeharkalea",
+        "Barrio": null,
+        "Distrito": "Errekalde",
+        "Precio": 1050,
+        "TipoContrato": null,
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 70,
+        "Planta": "5ª Planta",
+        "PrecioM2": 15.0,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/goya-zeharkalea/errekalde/bilbao/0e9266f4-282c-409c-b3cb-92427bc2fc51/d"
+    },
+    {
         "Id": "a1b03808-39d8-4d53-9431-905b4d93f921",
         "Titulo": "Piso en Ctra. Basurto-Castrejana",
         "Barrio": null,
@@ -322,20 +308,6 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-ercilla/indautxu/bilbao/9d7577f4-537a-4b41-8127-6b1274064e1c/d"
     },
     {
-        "Id": "cb670435-62b3-4ab1-8e2a-2f1b72aac503",
-        "Titulo": "Piso en Calle Calle General Concha",
-        "Barrio": null,
-        "Distrito": "Indautxu",
-        "Precio": 1250,
-        "TipoContrato": null,
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 63,
-        "Planta": "7ª Planta",
-        "PrecioM2": 19.84,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-calle-general-concha/indautxu/bilbao/cb670435-62b3-4ab1-8e2a-2f1b72aac503/d"
-    },
-    {
         "Id": "6b2c82d9-6b5d-41d5-95c4-2a07a7d56e8d",
         "Titulo": "Piso en Calle Diputacion",
         "Barrio": null,
@@ -348,6 +320,20 @@
         "Planta": "3ª Planta",
         "PrecioM2": 27.27,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-diputacion/abando-albia/bilbao/6b2c82d9-6b5d-41d5-95c4-2a07a7d56e8d/d"
+    },
+    {
+        "Id": "cb670435-62b3-4ab1-8e2a-2f1b72aac503",
+        "Titulo": "Piso en Calle Calle General Concha",
+        "Barrio": null,
+        "Distrito": "Indautxu",
+        "Precio": 1250,
+        "TipoContrato": null,
+        "Habitaciones": 2,
+        "Banos": 1,
+        "Metros": 63,
+        "Planta": "7ª Planta",
+        "PrecioM2": 19.84,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-calle-general-concha/indautxu/bilbao/cb670435-62b3-4ab1-8e2a-2f1b72aac503/d"
     },
     {
         "Id": "0616bfb3-6826-4746-9155-73af240e6318",
@@ -392,20 +378,6 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-calle-general-concha/indautxu/bilbao/6339f54e-7909-4623-a5e1-f864b00313df/d"
     },
     {
-        "Id": "a7962c83-5f27-44c9-b3e5-282b2ddc16d4",
-        "Titulo": "Piso en Calle Calle General Concha",
-        "Barrio": null,
-        "Distrito": "Indautxu",
-        "Precio": 1400,
-        "TipoContrato": null,
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 67,
-        "Planta": "3ª Planta",
-        "PrecioM2": 20.9,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-calle-general-concha/indautxu/bilbao/a7962c83-5f27-44c9-b3e5-282b2ddc16d4/d"
-    },
-    {
         "Id": "c7bb6f8c-574e-4197-8cad-6b2ca67e1ea8",
         "Titulo": "Piso en Benito Alberdi",
         "Barrio": null,
@@ -432,20 +404,6 @@
         "Planta": "4ª Planta",
         "PrecioM2": 16.85,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/hernani-kalea/ibaiondo/bilbao/b6892785-59de-4d38-892b-d8bffd5b069e/d"
-    },
-    {
-        "Id": "53ba42f3-17d5-4aa9-8a45-0d2930b5ae84",
-        "Titulo": "Piso en Cintureria",
-        "Barrio": null,
-        "Distrito": "Ibaiondo",
-        "Precio": 400,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 75,
-        "Planta": "2ª Planta",
-        "PrecioM2": 5.33,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/cintureria/ibaiondo/bilbao/53ba42f3-17d5-4aa9-8a45-0d2930b5ae84/d"
     },
     {
         "Id": "ade0118a-d4d9-4111-b34d-19836f5590a5",
@@ -488,6 +446,20 @@
         "Planta": "3ª Planta",
         "PrecioM2": 30.71,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/jardines-kalea/ibaiondo/bilbao/260b7a66-f3fc-470e-98c9-48cedc9e7a90/d"
+    },
+    {
+        "Id": "53ba42f3-17d5-4aa9-8a45-0d2930b5ae84",
+        "Titulo": "Piso en Cintureria",
+        "Barrio": null,
+        "Distrito": "Ibaiondo",
+        "Precio": 400,
+        "TipoContrato": null,
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 75,
+        "Planta": "2ª Planta",
+        "PrecioM2": 5.33,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/cintureria/ibaiondo/bilbao/53ba42f3-17d5-4aa9-8a45-0d2930b5ae84/d"
     },
     {
         "Id": "d25bf130-d9d5-4855-a107-e41a7fba9646",
@@ -544,20 +516,6 @@
         "Planta": "8ª Planta",
         "PrecioM2": 4.17,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/placido-careaga/deusto/bilbao/bc8490e0-d593-4013-ac2b-b324a07af6d8/d"
-    },
-    {
-        "Id": "907bc834-62e4-4091-a6d5-2dcae3124605",
-        "Titulo": "Piso en Calle Marqués del Puerto",
-        "Barrio": null,
-        "Distrito": "Abando - Albia",
-        "Precio": 1450,
-        "TipoContrato": null,
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 49,
-        "Planta": "6ª Planta",
-        "PrecioM2": 29.59,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-marques-del-puerto/abando-albia/bilbao/907bc834-62e4-4091-a6d5-2dcae3124605/d"
     },
     {
         "Id": "e2f5694b-e2fc-47c6-94e9-e287e8e0fbf3",
@@ -756,32 +714,18 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/zabalbide-kalea/otxarkoaga-txurdinaga/bilbao/f5477cc0-5ebc-480c-8418-7d16db061992/d"
     },
     {
-        "Id": "c1eeafc5-09c3-45c7-8973-8bdd6f09c4cb",
-        "Titulo": "Piso en Iparraguirre Kalea",
+        "Id": "f792d74b-f285-40b8-aaff-15fee5c1f42f",
+        "Titulo": "Apartamento en Abando - Albia",
         "Barrio": null,
-        "Distrito": "Indautxu",
-        "Precio": 2700,
+        "Distrito": "Bilbao",
+        "Precio": 3000,
         "TipoContrato": null,
-        "Habitaciones": 5,
-        "Banos": 3,
-        "Metros": 210,
-        "Planta": "4ª Planta",
-        "PrecioM2": 12.86,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/iparraguirre-kalea/indautxu/bilbao/c1eeafc5-09c3-45c7-8973-8bdd6f09c4cb/d"
-    },
-    {
-        "Id": "cdf0b56e-6f46-48a1-9f13-0528cf808cf7",
-        "Titulo": "Piso en Gregorio de la Revilla Zumarkalea",
-        "Barrio": null,
-        "Distrito": "Indautxu",
-        "Precio": 1700,
-        "TipoContrato": null,
-        "Habitaciones": 2,
+        "Habitaciones": 3,
         "Banos": 2,
-        "Metros": 78,
+        "Metros": 118,
         "Planta": "1ª Planta",
-        "PrecioM2": 21.79,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/gregorio-de-la-revilla-zumarkalea/indautxu/bilbao/cdf0b56e-6f46-48a1-9f13-0528cf808cf7/d"
+        "PrecioM2": 25.42,
+        "Url": "https://www.habitaclia.com/alquiler/apartamento/abando-albia/bilbao/f792d74b-f285-40b8-aaff-15fee5c1f42f/d"
     },
     {
         "Id": "175f8803-25ac-473e-9cd0-08cf765dec49",
@@ -796,6 +740,20 @@
         "Planta": "1ª Planta",
         "PrecioM2": 15.26,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/matiko-kalea/uribarri/bilbao/175f8803-25ac-473e-9cd0-08cf765dec49/d"
+    },
+    {
+        "Id": "c1eeafc5-09c3-45c7-8973-8bdd6f09c4cb",
+        "Titulo": "Piso en Iparraguirre Kalea",
+        "Barrio": null,
+        "Distrito": "Indautxu",
+        "Precio": 2700,
+        "TipoContrato": null,
+        "Habitaciones": 5,
+        "Banos": 3,
+        "Metros": 210,
+        "Planta": "4ª Planta",
+        "PrecioM2": 12.86,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/iparraguirre-kalea/indautxu/bilbao/c1eeafc5-09c3-45c7-8973-8bdd6f09c4cb/d"
     },
     {
         "Id": "a032e3b4-e0fc-4ae3-b7f0-355ad4a58cb7",
@@ -826,32 +784,18 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/gorliz-kalea/uribarri/bilbao/a85c6e2e-e5a2-4862-a5c5-2da820b61d19/d"
     },
     {
-        "Id": "660eea7d-2490-483e-9fd1-5c4a7da31c28",
-        "Titulo": "Piso en Iparraguirre Kalea",
+        "Id": "cdf0b56e-6f46-48a1-9f13-0528cf808cf7",
+        "Titulo": "Piso en Gregorio de la Revilla Zumarkalea",
         "Barrio": null,
-        "Distrito": "Abando - Albia",
-        "Precio": 2000,
+        "Distrito": "Indautxu",
+        "Precio": 1700,
         "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 3,
-        "Metros": 120,
-        "Planta": "4ª Planta",
-        "PrecioM2": 16.67,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/iparraguirre-kalea/abando-albia/bilbao/660eea7d-2490-483e-9fd1-5c4a7da31c28/d"
-    },
-    {
-        "Id": "781191da-b147-4d48-9714-619d815990db",
-        "Titulo": "Piso en Calle Marqués del Puerto",
-        "Barrio": null,
-        "Distrito": "Abando - Albia",
-        "Precio": 1400,
-        "TipoContrato": null,
-        "Habitaciones": 1,
-        "Banos": 1,
-        "Metros": 52,
-        "Planta": "6ª Planta",
-        "PrecioM2": 26.92,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-marques-del-puerto/abando-albia/bilbao/781191da-b147-4d48-9714-619d815990db/d"
+        "Habitaciones": 2,
+        "Banos": 2,
+        "Metros": 78,
+        "Planta": "1ª Planta",
+        "PrecioM2": 21.79,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/gregorio-de-la-revilla-zumarkalea/indautxu/bilbao/cdf0b56e-6f46-48a1-9f13-0528cf808cf7/d"
     },
     {
         "Id": "13281095-6d4b-47af-8a07-cbce13762e0d",
@@ -980,6 +924,20 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/ibaiondo/bilbao/44f64c91-d1e7-46c5-851c-a5ec56d686d4/d"
     },
     {
+        "Id": "884a7f1c-5288-4c75-aa63-218dd57a5a53",
+        "Titulo": "Piso en Basurto-Kastrexana Errepidea",
+        "Barrio": null,
+        "Distrito": "Basurtu - Zorrotza",
+        "Precio": 1900,
+        "TipoContrato": null,
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 95,
+        "Planta": "1ª Planta",
+        "PrecioM2": 20.0,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/basurto-kastrexana-errepidea/basurtu-zorrotza/bilbao/884a7f1c-5288-4c75-aa63-218dd57a5a53/d"
+    },
+    {
         "Id": "3970c103-9792-44d0-b0d5-1aa78221deac",
         "Titulo": "Piso en Rodríguez Arias Kalea",
         "Barrio": null,
@@ -1104,20 +1062,6 @@
         "Planta": "1ª Planta",
         "PrecioM2": 18.0,
         "Url": "https://www.habitaclia.com/alquiler/duplex/dendarikale/ibaiondo/bilbao/9e9f9a28-950a-4b13-ad9f-c8523e69a8d7/d"
-    },
-    {
-        "Id": "0e9266f4-282c-409c-b3cb-92427bc2fc51",
-        "Titulo": "Piso en Goya Zeharkalea",
-        "Barrio": null,
-        "Distrito": "Errekalde",
-        "Precio": 1050,
-        "TipoContrato": null,
-        "Habitaciones": 2,
-        "Banos": 1,
-        "Metros": 70,
-        "Planta": "5ª Planta",
-        "PrecioM2": 15.0,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/goya-zeharkalea/errekalde/bilbao/0e9266f4-282c-409c-b3cb-92427bc2fc51/d"
     },
     {
         "Id": "69ec33ec-fbda-4e21-bc6d-9ca04b1b3a49",
@@ -1484,20 +1428,6 @@
         "Url": "https://www.habitaclia.com/alquiler/apartamento/quintana-kalea/ibaiondo/bilbao/68569108-45f2-4fc1-b8fe-4393ae0a19f6/d"
     },
     {
-        "Id": "087593b0-94b8-44a4-8e4d-7f5087cbc215",
-        "Titulo": "Piso en Basurtu - Zorrotza",
-        "Barrio": null,
-        "Distrito": "Bilbao",
-        "Precio": 1800,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 110,
-        "Planta": "Bajos",
-        "PrecioM2": 16.36,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/basurtu-zorrotza/bilbao/087593b0-94b8-44a4-8e4d-7f5087cbc215/d"
-    },
-    {
         "Id": "2f3bdb66-385d-4c34-992e-045abce82548",
         "Titulo": "Piso en Alameda Cardenal Gardoqui",
         "Barrio": null,
@@ -1750,6 +1680,20 @@
         "Url": "https://www.habitaclia.com/alquiler/apartamento/biarritz-kalea/errekalde/bilbao/9cc83106-34ac-45bc-9bf5-8bd23e174e2b/d"
     },
     {
+        "Id": "a7962c83-5f27-44c9-b3e5-282b2ddc16d4",
+        "Titulo": "Piso en Calle Calle General Concha",
+        "Barrio": null,
+        "Distrito": "Indautxu",
+        "Precio": 1400,
+        "TipoContrato": null,
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 67,
+        "Planta": "3ª Planta",
+        "PrecioM2": 20.9,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-calle-general-concha/indautxu/bilbao/a7962c83-5f27-44c9-b3e5-282b2ddc16d4/d"
+    },
+    {
         "Id": "d5bca7fe-a031-4724-9f1e-d45464929c47",
         "Titulo": "Piso en Montevideo Etorbidea",
         "Barrio": null,
@@ -1988,6 +1932,20 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/euskadi-plaza-3/abando-albia/bilbao/bec8bf3b-b1d5-4465-bd28-c072cef4b1a9/d"
     },
     {
+        "Id": "907bc834-62e4-4091-a6d5-2dcae3124605",
+        "Titulo": "Piso en Calle Marqués del Puerto",
+        "Barrio": null,
+        "Distrito": "Abando - Albia",
+        "Precio": 1450,
+        "TipoContrato": null,
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 49,
+        "Planta": "6ª Planta",
+        "PrecioM2": 29.59,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-marques-del-puerto/abando-albia/bilbao/907bc834-62e4-4091-a6d5-2dcae3124605/d"
+    },
+    {
         "Id": "01cf402d-ca10-47fd-b9a3-72be242819f9",
         "Titulo": "Piso en Plaza de Euskadi",
         "Barrio": null,
@@ -2126,6 +2084,20 @@
         "Planta": "3ª Planta",
         "PrecioM2": 27.27,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-general-concha/errekalde/bilbao/a25a974a-92c4-490b-aa80-49bdfb61a205/d"
+    },
+    {
+        "Id": "781191da-b147-4d48-9714-619d815990db",
+        "Titulo": "Piso en Calle Marqués del Puerto",
+        "Barrio": null,
+        "Distrito": "Abando - Albia",
+        "Precio": 1400,
+        "TipoContrato": null,
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 52,
+        "Planta": "6ª Planta",
+        "PrecioM2": 26.92,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-marques-del-puerto/abando-albia/bilbao/781191da-b147-4d48-9714-619d815990db/d"
     },
     {
         "Id": "009fb6e5-4747-46d3-bf27-e43cb54e4464",
@@ -2506,20 +2478,6 @@
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/calle-general-concha-9/abando-albia/bilbao/9e2d1543-2bfd-44ec-8a2c-8de6aeb33862/d"
     },
     {
-        "Id": "b4c6dafa-6b20-40e4-a839-1a310a09cc7e",
-        "Titulo": "Piso en Juan Antonio Zunzunegui Etorbidea 7",
-        "Barrio": null,
-        "Distrito": "Basurtu - Zorrotza",
-        "Precio": 1625,
-        "TipoContrato": null,
-        "Habitaciones": 3,
-        "Banos": 2,
-        "Metros": 127,
-        "Planta": null,
-        "PrecioM2": 12.8,
-        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/juan-antonio-zunzunegui-etorbidea-7/basurtu-zorrotza/bilbao/b4c6dafa-6b20-40e4-a839-1a310a09cc7e/d"
-    },
-    {
         "Id": "99e567d7-df9e-4f5e-b13e-07b56a33666a",
         "Titulo": "Piso en Luis Briñas 25",
         "Barrio": null,
@@ -2532,6 +2490,20 @@
         "Planta": null,
         "PrecioM2": 12.8,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/luis-brinas-25/basurtu-zorrotza/bilbao/99e567d7-df9e-4f5e-b13e-07b56a33666a/d"
+    },
+    {
+        "Id": "b4c6dafa-6b20-40e4-a839-1a310a09cc7e",
+        "Titulo": "Piso en Juan Antonio Zunzunegui Etorbidea 7",
+        "Barrio": null,
+        "Distrito": "Basurtu - Zorrotza",
+        "Precio": 1625,
+        "TipoContrato": null,
+        "Habitaciones": 3,
+        "Banos": 2,
+        "Metros": 127,
+        "Planta": null,
+        "PrecioM2": 12.8,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/juan-antonio-zunzunegui-etorbidea-7/basurtu-zorrotza/bilbao/b4c6dafa-6b20-40e4-a839-1a310a09cc7e/d"
     },
     {
         "Id": "76c2166b-b1eb-4b7d-acab-c48eceae26da",

@@ -82,5 +82,19 @@
         "Planta": "4ª Planta",
         "PrecioM2": 14.17,
         "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/ramon-y-cajal-kalea/lasesarre/barakaldo/e8d3e567-0fe1-432a-9708-3800a411b0f5/d"
+    },
+    {
+        "Id": "08ac5039-5d7a-40a1-a097-a5b3d4135672",
+        "Titulo": "Piso en Zumalakarregi Kalea 41",
+        "Barrio": null,
+        "Distrito": "Burtzeña",
+        "Precio": 680,
+        "TipoContrato": null,
+        "Habitaciones": 1,
+        "Banos": 1,
+        "Metros": 40,
+        "Planta": null,
+        "PrecioM2": 17.0,
+        "Url": "https://www.habitaclia.com/alquiler/planta-intermedia/zumalakarregi-kalea-41/burtzena/barakaldo/08ac5039-5d7a-40a1-a097-a5b3d4135672/d"
     }
 ]

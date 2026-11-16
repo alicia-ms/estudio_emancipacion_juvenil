@@ -10,7 +10,6 @@ pisos = bd["pisos"]
 def estadisticas_municipios():
 
     resultado = pisos.aggregate([
-#Filtra los anuncios que valgan
         {
             "$match": {
                 "Precio": {"$gt": 0},
@@ -19,7 +18,6 @@ def estadisticas_municipios():
             }
         },
 
-#Agrupar por municipio
         {
             "$group": {
                 "_id": "$Municipio",
@@ -46,7 +44,6 @@ def estadisticas_municipios():
             }
         },
 
-#Seleccionar los campos que queremos coger
         {
             "$project": {
                 "_id": 0,
@@ -59,7 +56,6 @@ def estadisticas_municipios():
             }
         },
 
-#Ordena por precio medio
         {
             "$sort": {
                 "precio_medio": 1
@@ -78,7 +74,6 @@ def estadisticas_contrato():
 
     resultado = pisos.aggregate([
 
-#Filtrar anuncios con precio válido
         {
             "$match": {
                 "Precio": {"$gt": 0},
@@ -87,7 +82,6 @@ def estadisticas_contrato():
             }
         },
 
-#Agrupar por municipio y tipo de contrato
         {
             "$group": {
                 "_id": {
@@ -100,7 +94,6 @@ def estadisticas_contrato():
             }
         },
 
-#Seleccionar campos
         {
             "$project": {
                 "_id": 0,
@@ -111,7 +104,6 @@ def estadisticas_contrato():
             }
         },
 
-#Ordenar por municipio
         {
             "$sort": {
                 "municipio": 1,
@@ -129,7 +121,6 @@ def municipios_economicos():
 
     resultado = pisos.aggregate([
 
-#Filtrar anuncios válidos
         {
             "$match": {
                 "Precio": {"$gt": 0},
@@ -137,7 +128,6 @@ def municipios_economicos():
             }
         },
 
-#Agrupar por municipio
         {
             "$group": {
                 "_id": "$Municipio",
@@ -152,21 +142,18 @@ def municipios_economicos():
             }
         },
 
-#Necesitar un mínimo de anuncios
         {
             "$match": {
                 "total_anuncios": {"$gte": 3}
             }
         },
 
-#Ordenar de menor a mayor
         {
             "$sort": {
                 "precio_medio": 1
             }
         },
 
-#Mostrar los cinco primeros
         {
             "$limit": 5
         }
@@ -181,7 +168,6 @@ def precio_metro_municipio():
 
     resultado = pisos.aggregate([
 
-#Filtrar viviendas con superficie y precio válidos
         {
             "$match": {
                 "Precio": {"$gt": 0},
@@ -190,7 +176,6 @@ def precio_metro_municipio():
             }
         },
 
-#Agrupar por municipio
         {
             "$group": {
                 "_id": "$Municipio",
@@ -209,7 +194,6 @@ def precio_metro_municipio():
             }
         },
 
-#Crear y seleccionar resultados
         {
             "$project": {
                 "_id": 0,
@@ -224,7 +208,6 @@ def precio_metro_municipio():
             }
         },
 
-#Ordenar por precio por metro cuadrado
         {
             "$sort": {
                 "precio_m2_medio": 1
@@ -240,7 +223,6 @@ def precio_metro_municipio():
 
 def precios_por_municipio_y_contrato():
     resultado = pisos.aggregate([
-#Filtrar anuncios válidos
         {
             "$match": {
                 "Precio": {"$gt": 0},
@@ -249,7 +231,6 @@ def precios_por_municipio_y_contrato():
             }
         },
 
-#Agrupar por municipio y tipo de contrato
         {
             "$group": {
                 "_id": {
@@ -263,7 +244,6 @@ def precios_por_municipio_y_contrato():
             }
         },
 
-# Dar nombres claros a los campos
         {
             "$project": {
                 "_id": 0,
@@ -276,7 +256,6 @@ def precios_por_municipio_y_contrato():
             }
         },
 
-#Ordenar por municipio y precio
         {
             "$sort": {
                 "municipio": 1,

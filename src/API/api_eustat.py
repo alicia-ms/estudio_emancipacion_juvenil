@@ -244,21 +244,6 @@ def viviendasEuskadi():
         print("Mensaje del servidor:", r.text)
 
 
-
-# NumeroDeFianzasDepositadas.csv
-# Mide el dinamismo y la rotación del mercado de alquiler. Te permite ver en qué periodos 
-# hay más movimiento de nuevos contratos de alquiler y qué peso tiene cada territorio (como Bizkaia) 
-# frente al total de Euskadi.
-
-# RentaMensualMediaPorMCuadrado.csv
-# Es la variable clave para analizar la intensidad de la presión de precios por superficie. 
-# Te muestra cómo se ha encarecido el metro cuadrado en Bizkaia a lo largo de los años, 
-# permitiendo detectar qué zonas o tamaños de municipios sufren una mayor burbuja de precios.
-
-# RentaMensualMediaEnEurosmes.csv
-# Contiene el coste absoluto medio mensual por vivienda (€/mes) que pagan los inquilinos 
-# según el trimestre en que se inició el contrato.
-
 rentaMedia()
 poblacionActivaPorMunicipio()
 asalariadosTipoContrato()
